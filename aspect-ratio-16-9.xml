@@ -1,0 +1,137 @@
+<!--
+16:9 resolution: 
+based on 853x480
+-->
+<theme>
+
+   <!--
+   ///
+   All Views
+   ///
+   -->
+   <view name="system,gamelist">
+      <helpsystem name="help">
+         <pos>0.0375 0.942708333333333</pos><!-- 24 452.5 -->
+         <posDimmed>0.5 0.942708333333333</posDimmed>
+         <fontSize>0.041666666666667</fontSize><!-- 20 -->
+         <entrySpacing>0.021875</entrySpacing><!-- 14 -->
+         <iconTextSpacing>0.00625</iconTextSpacing><!-- 4 -->
+      </helpsystem>
+      <image name="helpBackground">
+         <size>1 0.114583333333333</size><!-- 100% 55 -->
+      </image>
+   </view>
+
+   <!--
+   ///
+   System View
+   ///
+   -->
+   <view name="system">
+      <image name="stripe">
+         <pos>0.765625 0</pos><!-- 490 0 -->
+         <size>0.2125 1</size><!-- 136 100% -->
+      </image>
+      <text name="system-name">
+         <pos>0.053125 0.442708333333333</pos><!-- 34 212.5 -->
+         <size>0.39375 0.525</size><!-- 252 252 -->
+         <fontSize>0.075</fontSize><!-- 36 -->
+      </text>
+      <image name="system-artwork">
+         <pos>0.78125 0.442708333333333</pos><!-- 500 212.5 -->
+         <maxSize>0.6640625 0.885416666666667</maxSize><!-- 425 425 -->
+      </image>
+   </view>
+
+   <!--
+   ///
+   Gamelist View
+   ///
+   -->
+   <view name="gamelist">
+      <text name="system-name">
+         <pos>0.0375 0.057291666666667</pos><!-- 24 32 -->
+         <fontSize>0.041666666666667</fontSize><!-- 20 -->
+      </text>
+      <gamelistinfo name="system-count">
+         <pos>0.95 0.057291666666667</pos><!-- 608 32 -->
+         <fontSize>0.041666666666667</fontSize><!-- 20 -->
+      </gamelistinfo>
+      <image name="top-border">
+         <pos>0.5 0.116666666666667</pos><!-- 50% 56 -->
+         <size>0.96875 0.002083333333333</size><!-- 620 1 -->
+      </image>
+      <textlist name="game-list">
+         <pos>${gamelistPos}</pos>
+         <fontSize>${gamelistFontSize}</fontSize>
+         <lineSpacing>${gamelistLineSpacing}</lineSpacing>
+         <horizontalMargin>0.015625</horizontalMargin><!-- 8 -->
+      </textlist>
+      <image name="bottom-border">
+         <pos>0.5 0.885416666666667</pos><!-- 50% 425 -->
+         <size>0.96875 0.002083333333333</size><!-- 620 1 -->
+      </image>
+   </view>
+   <fontSize name="small">
+      <variables>
+         <gamelistPos>0.021875 0.154166666666667</gamelistPos><!-- 14 72 -->
+         <gamelistFontSize>0.0375</gamelistFontSize><!-- 18 -->
+         <gamelistLineSpacing>1.7</gamelistLineSpacing>
+      </variables>
+   </fontSize>
+   <fontSize name="medium">
+      <variables>
+         <gamelistPos>0.021875 0.154166666666667</gamelistPos><!-- 14 72 -->
+         <gamelistFontSize>0.05</gamelistFontSize><!-- 24 -->
+         <gamelistLineSpacing>1.765</gamelistLineSpacing>
+      </variables>
+   </fontSize>
+   <variant name="
+      gamelist-basic
+      ">
+      <view name="gamelist">
+         <textlist name="game-list">
+            <size>${gamelistSize}</size>
+            <horizontalAlignment>center</horizontalAlignment>
+         </textlist>
+      </view>
+      <fontSize name="small">
+         <variables>
+            <gamelistSize>0.95625 0.695833333333333</gamelistSize><!-- 612 334 -->
+         </variables>
+      </fontSize>
+      <fontSize name="medium">
+         <variables>
+            <gamelistSize>0.95625 0.695833333333333</gamelistSize><!-- 612 334 -->
+         </variables>
+      </fontSize>
+   </variant>
+   <variant name="
+      gamelist-metadata-off-boxart,
+      gamelist-metadata-off-miximage,
+      gamelist-metadata-off-screenshot,
+      gamelist-metadata-off-titlescreen,
+      gamelist-metadata-off-physicalmedia
+      ">
+      <view name="gamelist">
+         <textlist name="game-list">
+            <size>${gamelistSize}</size>
+         </textlist>
+         <video name="game-art">
+            <pos>0.75 0.5</pos><!-- 480 240 -->
+            <maxSize>0.421875 0.625</maxSize><!-- 270 300 -->
+         </video>
+      </view>
+      <fontSize name="small">
+         <variables>
+            <gamelistSize>0.478125 0.695833333333333</gamelistSize><!-- 306 334 -->
+         </variables>
+      </fontSize>
+      <fontSize name="medium">
+         <variables>
+            <gamelistSize>0.478125 0.695833333333333</gamelistSize><!-- 306 334 -->
+         </variables>
+      </fontSize>
+   </variant>
+
+</theme>
