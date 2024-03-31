@@ -1,0 +1,62 @@
+<theme>
+   <colorScheme name="colorful-light">
+      <variables>
+         <!-- Global -->
+         <backgroundColor>F3F3F3</backgroundColor>
+         <systemBackgroundColor>${systemColor}</systemBackgroundColor>
+         <helpBackgroundColor>F3F3F3</helpBackgroundColor>
+         <helpIconColor>444444</helpIconColor>
+         <helpTextColor>666666</helpTextColor>
+         <!-- System View -->
+         <systemViewNameColor>FFFFFF</systemViewNameColor>
+         <!-- Gamelist View -->
+         <gamelistViewNameColor>1D1D1C</gamelistViewNameColor>
+         <gamelistCountColor>797979</gamelistCountColor>
+         <gamelistBorderColor>D7D7D7</gamelistBorderColor>
+         <gamelistSelectorColor>${systemColor}</gamelistSelectorColor>
+         <gamelistPrimaryColor>797979</gamelistPrimaryColor>
+         <gamelistSecondaryColor>797979</gamelistSecondaryColor>
+         <gamelistSelectedColor>F3F3F3</gamelistSelectedColor>
+      </variables>
+   </colorScheme>
+   <colorScheme name="colorful-dark">
+      <variables>
+         <!-- Global -->
+         <backgroundColor>111111</backgroundColor>
+         <systemBackgroundColor>${systemColor}</systemBackgroundColor>
+         <helpBackgroundColor>111111</helpBackgroundColor>
+         <helpIconColor>F3F3F399</helpIconColor>
+         <helpTextColor>F3F3F399</helpTextColor>
+         <!-- System View -->
+         <systemViewNameColor>FFFFFF</systemViewNameColor>
+         <!-- Gamelist View -->
+         <gamelistViewNameColor>FFFFFF</gamelistViewNameColor>
+         <gamelistCountColor>C9C9C9</gamelistCountColor>
+         <gamelistBorderColor>2D2D2D</gamelistBorderColor>
+         <gamelistSelectorColor>${systemColor}</gamelistSelectorColor>
+         <gamelistPrimaryColor>F3F3F333</gamelistPrimaryColor>
+         <gamelistSecondaryColor>F3F3F333</gamelistSecondaryColor>
+         <gamelistSelectedColor>F3F3F3</gamelistSelectedColor>
+      </variables>
+   </colorScheme>
+   <colorScheme name="dmg">
+      <variables>
+         <!-- Global -->
+         <backgroundColor>AAA7A6</backgroundColor>
+         <systemBackgroundColor>959290</systemBackgroundColor>
+         <helpBackgroundColor>AAA7A6</helpBackgroundColor>
+         <helpIconColor>444444</helpIconColor>
+         <helpTextColor>333333</helpTextColor>
+         <!-- System View -->
+         <systemViewNameColor>1D1D1C</systemViewNameColor>
+         <!-- Gamelist View -->
+         <gamelistViewNameColor>1D1D1C</gamelistViewNameColor>
+         <gamelistCountColor>1D1D1C</gamelistCountColor>
+         <gamelistBorderColor>888888</gamelistBorderColor>
+         <gamelistSelectorColor>bfbdbc</gamelistSelectorColor>
+         <gamelistPrimaryColor>1d1d1c66</gamelistPrimaryColor>
+         <gamelistSecondaryColor>1d1d1c66</gamelistSecondaryColor>
+         <gamelistSelectedColor>000000</gamelistSelectedColor>
+      </variables>
+   </colorScheme>
+</theme>

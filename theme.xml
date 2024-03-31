@@ -1,0 +1,256 @@
+<!--
+theme name:    Retro Mega (Revisited)
+author:        Anthony Caccese
+license:       creative commons CC-BY-NC-SA
+-->
+<theme>
+
+   <!--
+   ///
+   System Metadata
+   ///
+   -->
+   <include>./_inc/systems/metadata-global/_default.xml</include>
+   <include>./_inc/systems/metadata-global/${system.theme}.xml</include>
+   <include>./_inc/systems/metadata-custom/${system.theme}.xml</include>
+
+   <!--
+   ///
+   Variables
+   ///
+   -->
+   <variables>
+      <spacerImage>./_inc/images/space.png</spacerImage>
+      <fontLight>./_inc/fonts/Roboto-Regular.ttf</fontLight>
+      <fontRegular>./_inc/fonts/Roboto-Medium.ttf</fontRegular>
+      <fontBold>./_inc/fonts/Roboto-Bold.ttf</fontBold>
+   </variables>
+   <include>./colors.xml</include>
+
+   <!--
+   ///
+   All Views
+   ///
+   -->
+   <view name="system,gamelist">
+      <image name="background">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${backgroundColor}</color>
+         <zIndex>0</zIndex>
+      </image>
+      <helpsystem name="help">
+         <origin>0 0.5</origin>
+         <iconColor>${helpIconColor}</iconColor>
+         <textColor>${helpTextColor}</textColor>
+         <fontPath>${fontRegular}</fontPath>
+         <letterCase>capitalize</letterCase>
+         <!-- East Button -->
+         <customButtonIcon button="button_b_XBOX">./_inc/images/help-button-east.svg</customButtonIcon>
+         <customButtonIcon button="button_b_PS">./_inc/images/help-button-east.svg</customButtonIcon>
+         <customButtonIcon button="button_b_SNES">./_inc/images/help-button-east.svg</customButtonIcon>
+         <customButtonIcon button="button_b_switch">./_inc/images/help-button-south.svg</customButtonIcon>
+         <!-- South Button -->
+         <customButtonIcon button="button_a_XBOX">./_inc/images/help-button-south.svg</customButtonIcon>
+         <customButtonIcon button="button_a_PS">./_inc/images/help-button-south.svg</customButtonIcon>
+         <customButtonIcon button="button_a_SNES">./_inc/images/help-button-south.svg</customButtonIcon>
+         <customButtonIcon button="button_a_switch">./_inc/images/help-button-east.svg</customButtonIcon>
+         <!-- North Button -->
+         <customButtonIcon button="button_y_XBOX">./_inc/images/help-button-north.svg</customButtonIcon>
+         <customButtonIcon button="button_y_PS">./_inc/images/help-button-north.svg</customButtonIcon>
+         <customButtonIcon button="button_y_SNES">./_inc/images/help-button-north.svg</customButtonIcon>
+         <customButtonIcon button="button_y_switch">./_inc/images/help-button-west.svg</customButtonIcon>
+         <!-- West Button -->
+         <customButtonIcon button="button_x_XBOX">./_inc/images/help-button-west.svg</customButtonIcon>
+         <customButtonIcon button="button_x_PS">./_inc/images/help-button-west.svg</customButtonIcon>
+         <customButtonIcon button="button_x_SNES">./_inc/images/help-button-west.svg</customButtonIcon>
+         <customButtonIcon button="button_x_switch">./_inc/images/help-button-north.svg</customButtonIcon>
+         <!-- Left Stick Click -->
+         <customButtonIcon button="thumbstick_click">./_inc/images/help-left-stick-click.svg</customButtonIcon>
+      </helpsystem>
+      <image name="helpBackground">
+         <origin>0 1</origin>
+         <pos>0 1</pos>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${helpBackgroundColor}</color>
+         <stationary>betweenViews</stationary>
+         <zIndex>500</zIndex>
+      </image>
+   </view>
+
+   <!--
+   ///
+   System View
+   ///
+   -->
+   <view name="system">
+      <carousel name="carousel">
+         <pos>1 1</pos>
+         <fastScrolling>true</fastScrolling>
+      </carousel>
+      <image name="background">
+         <color>${systemBackgroundColor}</color>
+      </image>
+      <image name="stripe">
+         <origin>0.5 0</origin>
+         <path>./_inc/images/stripe.png</path>
+         <zIndex>1</zIndex>
+      </image>
+      <text name="system-name">
+         <origin>0 0.5</origin>
+         <fontPath>${fontBold}</fontPath>
+         <lineSpacing>1</lineSpacing>
+         <color>${systemViewNameColor}</color>
+         <text>${systemName}</text>
+         <zIndex>3</zIndex>
+      </text>
+      <image name="system-artwork">
+         <origin>0.5 0.5</origin>
+         <default>./_inc/systems/controllers/_default.png</default>
+         <path>./_inc/systems/controllers/${system.theme}.png</path>
+         <interpolation>linear</interpolation>
+         <zIndex>3</zIndex>
+      </image>
+   </view>
+
+   <!--
+   ///
+   Gamelist View
+   ///
+   -->
+   <view name="gamelist">
+      <text name="system-name,custom-collection-name">
+         <origin>0 0.5</origin>
+         <fontPath>${fontBold}</fontPath>
+         <lineSpacing>1</lineSpacing>
+         <color>${gamelistViewNameColor}</color>
+      </text>
+      <text name="system-name">
+         <text>${systemName}</text>
+      </text>
+      <gamelistinfo name="system-count">
+         <origin>1 0.5</origin>
+         <fontPath>${fontBold}</fontPath>
+         <color>${gamelistCountColor}</color>
+      </gamelistinfo>
+      <image name="
+         top-border,
+         bottom-border
+         ">
+         <origin>0.5 0</origin>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${gamelistBorderColor}</color>
+         <zIndex>600</zIndex>
+      </image>
+      <textlist name="game-list">
+         <origin>0 0</origin>
+         <fontPath>${fontBold}</fontPath>
+         <selectorColor>${gamelistSelectorColor}</selectorColor>
+         <primaryColor>${gamelistPrimaryColor}</primaryColor>
+         <secondaryColor>${gamelistSecondaryColor}</secondaryColor>
+         <selectedColor>${gamelistSelectedColor}</selectedColor>
+         <systemNameSuffix>false</systemNameSuffix>
+      </textlist>
+      <image name="bottom-border">
+         <stationary>betweenViews</stationary>
+      </image>
+   </view>
+   <variant name="
+      gamelist-metadata-off-boxart,
+      gamelist-metadata-off-miximage,
+      gamelist-metadata-off-screenshot,
+      gamelist-metadata-off-titlescreen,
+      gamelist-metadata-off-physicalmedia
+      ">
+      <view name="gamelist">
+         <video name="game-art">
+            <origin>0.5 0.5</origin>
+            <imageCornerRadius>0.02</imageCornerRadius>
+            <videoCornerRadius>0.02</videoCornerRadius>
+            <pillarboxes>false</pillarboxes>
+            <delay>3</delay>
+            <iterationCount>1</iterationCount>
+            <onIterationsDone>image</onIterationsDone>
+         </video>
+      </view>
+   </variant>
+   <variant name="gamelist-metadata-off-boxart">
+      <view name="gamelist">
+         <video name="game-art">
+            <imageType>cover</imageType>
+         </video>
+      </view>
+   </variant>
+   <variant name="gamelist-metadata-off-miximage">
+      <view name="gamelist">
+         <video name="game-art">
+            <imageType>miximage</imageType>
+         </video>
+      </view>
+   </variant>
+   <variant name="gamelist-metadata-off-screenshot">
+      <view name="gamelist">
+         <video name="game-art">
+            <imageType>screenshot</imageType>
+         </video>
+      </view>
+   </variant>
+   <variant name="gamelist-metadata-off-titlescreen">
+      <view name="gamelist">
+         <video name="game-art">
+            <imageType>titlescreen</imageType>
+         </video>
+      </view>
+   </variant>
+   <variant name="gamelist-metadata-off-physicalmedia">
+      <view name="gamelist">
+         <video name="game-art">
+            <imageType>physicalmedia</imageType>
+         </video>
+      </view>
+   </variant>
+
+   <!--
+   ///
+   Aspect Ratios
+   ///
+   -->
+   <aspectRatio name="4:3">
+      <include>./aspect-ratio-4-3.xml</include>
+   </aspectRatio>
+
+   <!--
+   ///
+   Sounds
+   ///
+   -->
+   <view name="all">
+      <sound name="back">
+         <path>./_inc/sounds/back.wav</path>
+      </sound>
+      <sound name="favorite">
+         <path>./_inc/sounds/favorite.wav</path>
+      </sound>
+      <sound name="launch">
+         <path>./_inc/sounds/launch.wav</path>
+      </sound>
+      <sound name="quicksysselect">
+         <path>./_inc/sounds/quicksysselect.wav</path>
+      </sound>
+      <sound name="scroll">
+         <path>./_inc/sounds/scroll.wav</path>
+      </sound>
+      <sound name="select">
+         <path>./_inc/sounds/select.wav</path>
+      </sound>
+      <sound name="systembrowse">
+         <path>./_inc/sounds/systembrowse.wav</path>
+      </sound>
+   </view>
+
+</theme>
