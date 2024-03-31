@@ -23,3 +23,56 @@ I primarily translated the layout to be usable in the theming engine for ES-DE. 
 | Gamelist View (Dark) | Gamelist View (Light) |
 |----|----|
 | <img src="https://github.com/anthonycaccese/retromega-revisited-es-de/assets/1454947/2a39cfba-002e-4c9f-8498-3e5ed3508396"> | <img src="https://github.com/anthonycaccese/retromega-revisited-es-de/assets/1454947/9d204401-24dc-4716-b3b5-f1337f9edf3d"> |
+
+## **Configuration Options**
+
+The theme has a simple set of options that can be changed directly from the UI Settings menu of ES-DE 
+
+### **Variants:**
+
+- `Theme Variant` - sets the layout used for the gamelist view when media & metadata are scraped for your games.  There are a few variants to choose from:
+   - Lists - There are a few options available to allow for dfferent media to be displayed. Please select the one that best matches the media you have downloaded for your games.
+      - `List: Boxart` - Displays Boxart
+      - `List: Miximage` - Displays Miximages
+      - `List: Screenshot` - Displays Screenshots
+      - `List: Title Screen` - Displays Title Screens
+      - `List: Physical Media` - Displays Physical Media
+   - `Basic` - Displays a basic list of game names without any additional artwork.
+
+### **Color Schemes:**
+
+- `Theme Color Scheme` - sets the color scheme that is used for the overall theme on all views.  There are 6 built in color schems:
+   - `Colorful (Light)` - The default color scheme.  Displays a custom color for each system based on the Colorful media set.
+   - `Colorful (Dark)` - A `dark mode` version of the above color scheme.
+   - `DMG` - Sets a light color scheme that displays for all systems.
+ 
+### **Font Sizes:**
+
+- `Theme Font Size` - sets the size that text will render at. This can be helpful when using the theme on small screens.
+   - Supported Font Sizes:
+   - `Medium` - Default size, good for small handheld screens under 6 inches in size.
+   - `Small` - Smaller size, good for larger screens.
+
+### **Aspect Ratios:**
+
+- `Theme Aspect Ratio` - sets the aspect ratio to match your display. This should happen automatically but can also be set manually if needed.
+   - Supported Aspect Ratios:
+   - `4:3`
+ 
+## Additional Notes
+
+### To Do
+- Add additional aspect ratios
+- Add additional system images
+
+### Credits
+
+- Original concept created & designed by [djfumberger](https://fumberger.com/)
+- Controller Images created by [Pineapple Graphics](https://www.instagram.com/pineapple.graphics/)
+- The base folder image used to create the All Games, Favorites, Last Played and Custom Collections images was sourced from [Rick Patrick](https://www.softicons.com/designers/rick-patrick).
+- The icons on the folder images were sourced from [FontAwesome](https://fontawesome.com/search?o=r&m=free)
+
+## **License**
+
+Creative Commons CC-BY-NC-SA - https://creativecommons.org/licenses/by-nc-sa/2.0/
+You are free to share and adapt this theme as long as you provide attribution back as well share any updates you make under the same licence terms.
