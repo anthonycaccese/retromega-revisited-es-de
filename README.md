@@ -44,7 +44,8 @@ The theme has a simple set of options that can be changed directly from the UI S
 - `Theme Color Scheme` - sets the color scheme that is used for the overall theme on all views.  There are 6 built in color schems:
    - `Colorful (Light)` - The default color scheme.  Displays a custom color for each system based on the Colorful media set.
    - `Colorful (Dark)` - A `dark mode` version of the above color scheme.
-   - `DMG` - Sets a light color scheme that displays for all systems.
+   - `DMG` - a DMG inspired color scheme.
+   - `Famicom` - a Famicom inspired color scheme.
  
 ### **Font Sizes:**
 
