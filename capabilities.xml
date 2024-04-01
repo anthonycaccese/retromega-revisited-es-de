@@ -12,9 +12,9 @@
    <fontSize>small</fontSize>
    <fontSize>medium</fontSize>
 
-   <transitions name="transitions">
-      <label>transitions</label>
-      <selectable>false</selectable>
+   <transitions name="slide">
+      <label>Slide</label>
+      <selectable>true</selectable>
       <systemToSystem>slide</systemToSystem>
       <systemToGamelist>slide</systemToGamelist>
       <gamelistToGamelist>slide</gamelistToGamelist>
@@ -22,7 +22,18 @@
       <startupToSystem>instant</startupToSystem>
       <startupToGamelist>instant</startupToGamelist>
    </transitions>
+   <transitions name="instant">
+      <label>Instant</label>
+      <selectable>true</selectable>
+      <systemToSystem>instant</systemToSystem>
+      <systemToGamelist>slide</systemToGamelist>
+      <gamelistToGamelist>instant</gamelistToGamelist>
+      <gamelistToSystem>slide</gamelistToSystem>
+      <startupToSystem>instant</startupToSystem>
+      <startupToGamelist>instant</startupToGamelist>
+   </transitions>
    <suppressTransitionProfiles>
+      <entry>builtin-instant</entry>
       <entry>builtin-slide</entry>
       <entry>builtin-fade</entry>
    </suppressTransitionProfiles>
