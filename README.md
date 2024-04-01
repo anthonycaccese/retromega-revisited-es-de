@@ -47,6 +47,10 @@ The theme has a simple set of options that can be changed directly from the UI S
    - `DMG` - a DMG inspired color scheme.
    - `Famicom` - a Famicom inspired color scheme.
  
+| Colorful (Light) | Colorful (Dark) | DMG | Famicom |
+|----|----|----|----|
+| <img src="https://github.com/anthonycaccese/retromega-revisited-es-de/assets/1454947/35af9987-3f4a-46e4-aa31-315c3734abfc"> | <img src="https://github.com/anthonycaccese/retromega-revisited-es-de/assets/1454947/2ab9fcb9-5681-434a-92fa-1748b37771cc"> | <img src="https://github.com/anthonycaccese/retromega-revisited-es-de/assets/1454947/526c0a82-5036-4a56-8cfb-b26e8215d857"> | <img src="https://github.com/anthonycaccese/retromega-revisited-es-de/assets/1454947/02ca5ccd-31d5-4fab-b930-0262bc85decf"> |
+ 
 ### **Font Sizes:**
 
 - `Theme Font Size` - sets the size that text will render at. This can be helpful when using the theme on small screens.
