@@ -19,8 +19,8 @@
       <systemToGamelist>slide</systemToGamelist>
       <gamelistToGamelist>slide</gamelistToGamelist>
       <gamelistToSystem>slide</gamelistToSystem>
-      <startupToSystem>fade</startupToSystem>
-      <startupToGamelist>fade</startupToGamelist>
+      <startupToSystem>instant</startupToSystem>
+      <startupToGamelist>instant</startupToGamelist>
    </transitions>
    <transitions name="instant-slide">
       <label>Instant + Slide</label>
