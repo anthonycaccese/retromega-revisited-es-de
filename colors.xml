@@ -9,8 +9,8 @@
          <!-- System View -->
          <systemBackgroundColor>${systemColor}</systemBackgroundColor>
          <systemViewNameColor>FFFFFF</systemViewNameColor>
-         <systemViewArtworkColor>FFFFFF</systemViewArtworkColor>
-         <systemViewArtworkSaturation>1</systemViewArtworkSaturation>
+         <systemArtworkColor>FFFFFF</systemArtworkColor>
+         <systemArtworkSaturation>1</systemArtworkSaturation>
          <!-- Gamelist View -->
          <gamelistViewNameColor>1D1D1C</gamelistViewNameColor>
          <gamelistCountColor>797979</gamelistCountColor>
@@ -31,8 +31,8 @@
          <!-- System View -->
          <systemBackgroundColor>${systemColor}</systemBackgroundColor>
          <systemViewNameColor>FFFFFF</systemViewNameColor>
-         <systemViewArtworkColor>FFFFFF</systemViewArtworkColor>
-         <systemViewArtworkSaturation>1</systemViewArtworkSaturation>
+         <systemArtworkColor>FFFFFF</systemArtworkColor>
+         <systemArtworkSaturation>1</systemArtworkSaturation>
          <!-- Gamelist View -->
          <gamelistViewNameColor>FFFFFF</gamelistViewNameColor>
          <gamelistCountColor>C9C9C9</gamelistCountColor>
@@ -53,8 +53,8 @@
          <!-- System View -->
          <systemBackgroundColor>959290</systemBackgroundColor>
          <systemViewNameColor>1D1D1C</systemViewNameColor>
-         <systemViewArtworkColor>FFFFFF</systemViewArtworkColor>
-         <systemViewArtworkSaturation>1</systemViewArtworkSaturation>
+         <systemArtworkColor>FFFFFF</systemArtworkColor>
+         <systemArtworkSaturation>1</systemArtworkSaturation>
          <!-- Gamelist View -->
          <gamelistViewNameColor>1D1D1C</gamelistViewNameColor>
          <gamelistCountColor>1D1D1C</gamelistCountColor>
@@ -63,6 +63,28 @@
          <gamelistPrimaryColor>1d1d1c66</gamelistPrimaryColor>
          <gamelistSecondaryColor>1d1d1c66</gamelistSecondaryColor>
          <gamelistSelectedColor>000000</gamelistSelectedColor>
+      </variables>
+   </colorScheme>
+   <colorScheme name="famicom">
+      <variables>
+         <!-- Global -->
+         <backgroundColor>DCD6B6</backgroundColor>
+         <helpBackgroundColor>DCD6B6</helpBackgroundColor>
+         <helpIconColor>000000BB</helpIconColor>
+         <helpTextColor>000000AA</helpTextColor>
+         <!-- System View -->
+         <systemBackgroundColor>711521</systemBackgroundColor>
+         <systemViewNameColor>DCD6B6</systemViewNameColor>
+         <systemArtworkColor>DCD6B6</systemArtworkColor>
+         <systemArtworkSaturation>1</systemArtworkSaturation>
+         <!-- Gamelist View -->
+         <gamelistViewNameColor>000000</gamelistViewNameColor>
+         <gamelistCountColor>00000099</gamelistCountColor>
+         <gamelistBorderColor>00000033</gamelistBorderColor>
+         <gamelistSelectorColor>711521</gamelistSelectorColor>
+         <gamelistPrimaryColor>00000099</gamelistPrimaryColor>
+         <gamelistSecondaryColor>00000099</gamelistSecondaryColor>
+         <gamelistSelectedColor>DCD6B6</gamelistSelectedColor>
       </variables>
    </colorScheme>
 </theme>

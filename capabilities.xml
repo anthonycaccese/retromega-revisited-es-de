@@ -36,6 +36,9 @@
    <colorScheme name="dmg">
       <label>DMG</label>
    </colorScheme>
+   <colorScheme name="famicom">
+      <label>Famicom</label>
+   </colorScheme>
 
    <!-- List: Metadata Off -->
    <variant name="gamelist-metadata-off-boxart">

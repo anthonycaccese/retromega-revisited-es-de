@@ -114,6 +114,8 @@ license:       creative commons CC-BY-NC-SA
          <default>./_inc/systems/controllers/_default.png</default>
          <path>./_inc/systems/controllers/${system.theme}.png</path>
          <interpolation>linear</interpolation>
+         <color>${systemArtworkColor}</color>
+         <saturation>${systemArtworkSaturation}</saturation>
          <zIndex>3</zIndex>
       </image>
    </view>
