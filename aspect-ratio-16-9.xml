@@ -38,7 +38,7 @@ based on 853x480
          <fontSize>0.075</fontSize><!-- 36 -->
       </text>
       <image name="system-artwork">
-         <pos>0.735 0.442708333333333</pos><!-- 500 212.5 -->
+         <pos>0.731535756154748 0.442708333333333</pos><!-- 500 624 -->
          <maxSize>0.6640625 0.885416666666667</maxSize><!-- 425 425 -->
       </image>
    </view>
