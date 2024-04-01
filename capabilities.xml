@@ -19,6 +19,16 @@
       <systemToGamelist>slide</systemToGamelist>
       <gamelistToGamelist>slide</gamelistToGamelist>
       <gamelistToSystem>slide</gamelistToSystem>
+      <startupToSystem>fade</startupToSystem>
+      <startupToGamelist>fade</startupToGamelist>
+   </transitions>
+   <transitions name="instant-slide">
+      <label>Instant + Slide</label>
+      <selectable>true</selectable>
+      <systemToSystem>instant</systemToSystem>
+      <systemToGamelist>slide</systemToGamelist>
+      <gamelistToGamelist>instant</gamelistToGamelist>
+      <gamelistToSystem>slide</gamelistToSystem>
       <startupToSystem>instant</startupToSystem>
       <startupToGamelist>instant</startupToGamelist>
    </transitions>
@@ -26,9 +36,9 @@
       <label>Instant</label>
       <selectable>true</selectable>
       <systemToSystem>instant</systemToSystem>
-      <systemToGamelist>slide</systemToGamelist>
+      <systemToGamelist>instant</systemToGamelist>
       <gamelistToGamelist>instant</gamelistToGamelist>
-      <gamelistToSystem>slide</gamelistToSystem>
+      <gamelistToSystem>instant</gamelistToSystem>
       <startupToSystem>instant</startupToSystem>
       <startupToGamelist>instant</startupToGamelist>
    </transitions>
