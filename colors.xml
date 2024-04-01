@@ -3,12 +3,14 @@
       <variables>
          <!-- Global -->
          <backgroundColor>F3F3F3</backgroundColor>
-         <systemBackgroundColor>${systemColor}</systemBackgroundColor>
          <helpBackgroundColor>F3F3F3</helpBackgroundColor>
          <helpIconColor>444444</helpIconColor>
          <helpTextColor>666666</helpTextColor>
          <!-- System View -->
+         <systemBackgroundColor>${systemColor}</systemBackgroundColor>
          <systemViewNameColor>FFFFFF</systemViewNameColor>
+         <systemViewArtworkColor>FFFFFF</systemViewArtworkColor>
+         <systemViewArtworkSaturation>1</systemViewArtworkSaturation>
          <!-- Gamelist View -->
          <gamelistViewNameColor>1D1D1C</gamelistViewNameColor>
          <gamelistCountColor>797979</gamelistCountColor>
@@ -23,19 +25,21 @@
       <variables>
          <!-- Global -->
          <backgroundColor>111111</backgroundColor>
-         <systemBackgroundColor>${systemColor}</systemBackgroundColor>
          <helpBackgroundColor>111111</helpBackgroundColor>
          <helpIconColor>F3F3F399</helpIconColor>
          <helpTextColor>F3F3F399</helpTextColor>
          <!-- System View -->
+         <systemBackgroundColor>${systemColor}</systemBackgroundColor>
          <systemViewNameColor>FFFFFF</systemViewNameColor>
+         <systemViewArtworkColor>FFFFFF</systemViewArtworkColor>
+         <systemViewArtworkSaturation>1</systemViewArtworkSaturation>
          <!-- Gamelist View -->
          <gamelistViewNameColor>FFFFFF</gamelistViewNameColor>
          <gamelistCountColor>C9C9C9</gamelistCountColor>
          <gamelistBorderColor>2D2D2D</gamelistBorderColor>
          <gamelistSelectorColor>${systemColor}</gamelistSelectorColor>
-         <gamelistPrimaryColor>F3F3F333</gamelistPrimaryColor>
-         <gamelistSecondaryColor>F3F3F333</gamelistSecondaryColor>
+         <gamelistPrimaryColor>F3F3F355</gamelistPrimaryColor>
+         <gamelistSecondaryColor>F3F3F355</gamelistSecondaryColor>
          <gamelistSelectedColor>F3F3F3</gamelistSelectedColor>
       </variables>
    </colorScheme>
@@ -43,12 +47,14 @@
       <variables>
          <!-- Global -->
          <backgroundColor>AAA7A6</backgroundColor>
-         <systemBackgroundColor>959290</systemBackgroundColor>
          <helpBackgroundColor>AAA7A6</helpBackgroundColor>
          <helpIconColor>444444</helpIconColor>
          <helpTextColor>333333</helpTextColor>
          <!-- System View -->
+         <systemBackgroundColor>959290</systemBackgroundColor>
          <systemViewNameColor>1D1D1C</systemViewNameColor>
+         <systemViewArtworkColor>FFFFFF</systemViewArtworkColor>
+         <systemViewArtworkSaturation>1</systemViewArtworkSaturation>
          <!-- Gamelist View -->
          <gamelistViewNameColor>1D1D1C</gamelistViewNameColor>
          <gamelistCountColor>1D1D1C</gamelistCountColor>
