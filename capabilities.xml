@@ -60,6 +60,12 @@
    <colorScheme name="famicom">
       <label>Famicom</label>
    </colorScheme>
+   <colorScheme name="indigo-light">
+      <label>Indigo (Light)</label>
+   </colorScheme>
+   <colorScheme name="indigo-dark">
+      <label>Indigo (Dark)</label>
+   </colorScheme>
 
    <!-- List: Metadata Off -->
    <variant name="gamelist-metadata-off-boxart">
