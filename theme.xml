@@ -188,7 +188,7 @@ license:          creative commons CC-BY-NC-SA
    <variant name="gamelist-metadata-off-boxart">
       <view name="gamelist">
          <video name="game-art">
-            <imageType>cover</imageType>
+            <imageType>cover,screenshot</imageType>
          </video>
       </view>
    </variant>

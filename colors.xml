@@ -63,8 +63,8 @@
          <gamelistCountColor>1D1D1C</gamelistCountColor>
          <gamelistBorderColor>888888</gamelistBorderColor>
          <gamelistSelectorColor>bfbdbc</gamelistSelectorColor>
-         <gamelistPrimaryColor>1d1d1c66</gamelistPrimaryColor>
-         <gamelistSecondaryColor>1d1d1c66</gamelistSecondaryColor>
+         <gamelistPrimaryColor>1d1d1c44</gamelistPrimaryColor>
+         <gamelistSecondaryColor>1d1d1c44</gamelistSecondaryColor>
          <gamelistSelectedColor>000000</gamelistSelectedColor>
       </variables>
    </colorScheme>
