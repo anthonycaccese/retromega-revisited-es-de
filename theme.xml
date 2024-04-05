@@ -125,7 +125,7 @@ license:          creative commons CC-BY-NC-SA
 
    <!--
    ///
-   Gamelist View
+   Gamelist View - All Variants
    ///
    -->
    <view name="gamelist">
@@ -143,29 +143,43 @@ license:          creative commons CC-BY-NC-SA
          <fontPath>${fontBold}</fontPath>
          <color>${gamelistCountColor}</color>
       </gamelistinfo>
-      <image name="
-         top-border,
-         bottom-border
-         ">
+      <image name="top-border,bottom-border">
          <origin>0.5 0</origin>
          <path>${spacerImage}</path>
          <tile>true</tile>
          <color>${gamelistBorderColor}</color>
          <zIndex>600</zIndex>
       </image>
-      <textlist name="game-list">
-         <origin>0 0</origin>
-         <fontPath>${fontBold}</fontPath>
-         <selectorColor>${gamelistSelectorColor}</selectorColor>
-         <primaryColor>${gamelistPrimaryColor}</primaryColor>
-         <secondaryColor>${gamelistSecondaryColor}</secondaryColor>
-         <selectedColor>${gamelistSelectedColor}</selectedColor>
-         <systemNameSuffix>false</systemNameSuffix>
-      </textlist>
       <image name="bottom-border">
          <stationary>betweenViews</stationary>
       </image>
    </view>
+
+   <!--
+   ///
+   Gamelist View - List Variants
+   ///
+   -->
+   <variant name="
+      gamelist-basic
+      gamelist-metadata-off-boxart,
+      gamelist-metadata-off-miximage,
+      gamelist-metadata-off-screenshot,
+      gamelist-metadata-off-titlescreen,
+      gamelist-metadata-off-physicalmedia
+      ">
+      <view name="gamelist">
+         <textlist name="game-list">
+            <origin>0 0</origin>
+            <fontPath>${fontBold}</fontPath>
+            <selectorColor>${gamelistSelectorColor}</selectorColor>
+            <primaryColor>${gamelistPrimaryColor}</primaryColor>
+            <secondaryColor>${gamelistSecondaryColor}</secondaryColor>
+            <selectedColor>${gamelistSelectedColor}</selectedColor>
+            <systemNameSuffix>false</systemNameSuffix>
+         </textlist>
+      </view>
+   </variant>
    <variant name="
       gamelist-metadata-off-boxart,
       gamelist-metadata-off-miximage,
@@ -218,6 +232,29 @@ license:          creative commons CC-BY-NC-SA
          <video name="game-art">
             <imageType>physicalmedia</imageType>
          </video>
+      </view>
+   </variant>
+
+   <!--
+   ///
+   Gamelist View - Carousel Variants
+   ///
+   -->
+   <variant name="gamelist-carousel">
+      <include>./_inc/systems/coversize/${systemCoverSize}.xml</include>
+      <view name="gamelist">
+         <carousel name="game-carousel">
+            <origin>0 0.5</origin>
+            <pos>0 0.5</pos>
+            <size>1 1</size>
+            <imageType>cover</imageType>
+            <imageCornerRadius>0.005</imageCornerRadius>
+            <fastScrolling>true</fastScrolling>
+            <color>00000000</color>
+            <textColor>ffffff</textColor>
+            <textBackgroundColor>333333</textBackgroundColor>
+            <fontPath>${fontBold}</fontPath>
+         </carousel>
       </view>
    </variant>
 

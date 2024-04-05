@@ -117,6 +117,12 @@
       </override>
    </variant>
 
+   <!-- Carousel -->
+   <variant name="gamelist-carousel">
+      <label>Carousel: Boxart</label>
+      <selectable>true</selectable>
+   </variant>
+
    <!-- Basic -->
    <variant name="gamelist-basic">
       <label>Basic</label>

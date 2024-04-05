@@ -45,7 +45,7 @@ based on 720x480
 
    <!--
    ///
-   Gamelist View
+   Gamelist View - All Variants
    ///
    -->
    <view name="gamelist">
@@ -61,31 +61,48 @@ based on 720x480
          <pos>0.5 0.116666666666667</pos><!-- 50% 56 -->
          <size>0.96875 0.002083333333333</size><!-- 620 1 -->
       </image>
-      <textlist name="game-list">
-         <pos>${gamelistPos}</pos>
-         <fontSize>${gamelistFontSize}</fontSize>
-         <lineSpacing>${gamelistLineSpacing}</lineSpacing>
-         <horizontalMargin>0.015625</horizontalMargin><!-- 8 -->
-      </textlist>
       <image name="bottom-border">
          <pos>0.5 0.885416666666667</pos><!-- 50% 425 -->
          <size>0.96875 0.002083333333333</size><!-- 620 1 -->
       </image>
    </view>
-   <fontSize name="small">
-      <variables>
-         <gamelistPos>0.021875 0.154166666666667</gamelistPos><!-- 14 72 -->
-         <gamelistFontSize>0.0375</gamelistFontSize><!-- 18 -->
-         <gamelistLineSpacing>1.7</gamelistLineSpacing>
-      </variables>
-   </fontSize>
-   <fontSize name="medium">
-      <variables>
-         <gamelistPos>0.021875 0.154166666666667</gamelistPos><!-- 14 72 -->
-         <gamelistFontSize>0.05</gamelistFontSize><!-- 24 -->
-         <gamelistLineSpacing>1.765</gamelistLineSpacing>
-      </variables>
-   </fontSize>
+
+   <!--
+   ///
+   Gamelist View - List Variants
+   ///
+   -->
+   <variant name="
+      gamelist-basic
+      gamelist-metadata-off-boxart,
+      gamelist-metadata-off-miximage,
+      gamelist-metadata-off-screenshot,
+      gamelist-metadata-off-titlescreen,
+      gamelist-metadata-off-physicalmedia
+      ">
+      <view name="gamelist">
+         <textlist name="game-list">
+            <pos>${gamelistPos}</pos>
+            <fontSize>${gamelistFontSize}</fontSize>
+            <lineSpacing>${gamelistLineSpacing}</lineSpacing>
+            <horizontalMargin>0.015625</horizontalMargin><!-- 8 -->
+         </textlist>
+      </view>
+      <fontSize name="small">
+         <variables>
+            <gamelistPos>0.021875 0.154166666666667</gamelistPos><!-- 14 72 -->
+            <gamelistFontSize>0.0375</gamelistFontSize><!-- 18 -->
+            <gamelistLineSpacing>1.7</gamelistLineSpacing>
+         </variables>
+      </fontSize>
+      <fontSize name="medium">
+         <variables>
+            <gamelistPos>0.021875 0.154166666666667</gamelistPos><!-- 14 72 -->
+            <gamelistFontSize>0.05</gamelistFontSize><!-- 24 -->
+            <gamelistLineSpacing>1.765</gamelistLineSpacing>
+         </variables>
+      </fontSize>
+   </variant>
    <variant name="
       gamelist-basic
       ">
