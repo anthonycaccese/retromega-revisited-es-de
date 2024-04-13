@@ -66,9 +66,6 @@
    <colorScheme name="indigo-dark">
       <label>Indigo (Dark)</label>
    </colorScheme>
-   <colorScheme name="retro">
-      <label>Retro</label>
-   </colorScheme>
 
    <!-- List: Metadata Off -->
    <variant name="gamelist-metadata-off-boxart">

@@ -137,27 +137,4 @@
          <gamelistSelectedColor>F3F3F3</gamelistSelectedColor>
       </variables>
    </colorScheme>
-   <colorScheme name="retro">
-      <variables>
-         <!-- Global -->
-         <backgroundColor>E3E3E3</backgroundColor>
-         <helpBackgroundColor>E3E3E3</helpBackgroundColor>
-         <helpIconColor>444444</helpIconColor>
-         <helpTextColor>666666</helpTextColor>
-         <!-- System View -->
-         <systemBackgroundColor>D0507B</systemBackgroundColor>
-         <systemViewNameColor>FFFFFF</systemViewNameColor>
-         <systemArtworkColor>FFFFFF</systemArtworkColor>
-         <systemArtworkSaturation>1</systemArtworkSaturation>
-         <systemArtworkBrigtness>0</systemArtworkBrigtness>
-         <!-- Gamelist View -->
-         <gamelistViewNameColor>1D1D1C</gamelistViewNameColor>
-         <gamelistCountColor>797979</gamelistCountColor>
-         <gamelistBorderColor>D7D7D7</gamelistBorderColor>
-         <gamelistSelectorColor>D0507B</gamelistSelectorColor>
-         <gamelistPrimaryColor>797979</gamelistPrimaryColor>
-         <gamelistSecondaryColor>797979</gamelistSecondaryColor>
-         <gamelistSelectedColor>E3E3E3</gamelistSelectedColor>
-      </variables>
-   </colorScheme>
 </theme>
