@@ -51,28 +51,6 @@ license:          creative commons CC-BY-NC-SA
          <textColor>${helpTextColor}</textColor>
          <fontPath>${fontRegular}</fontPath>
          <letterCase>capitalize</letterCase>
-         <!-- East Button -->
-         <customButtonIcon button="button_b_XBOX">./_inc/images/help-button-east.svg</customButtonIcon>
-         <customButtonIcon button="button_b_PS">./_inc/images/help-button-east.svg</customButtonIcon>
-         <customButtonIcon button="button_b_SNES">./_inc/images/help-button-east.svg</customButtonIcon>
-         <customButtonIcon button="button_b_switch">./_inc/images/help-button-south.svg</customButtonIcon>
-         <!-- South Button -->
-         <customButtonIcon button="button_a_XBOX">./_inc/images/help-button-south.svg</customButtonIcon>
-         <customButtonIcon button="button_a_PS">./_inc/images/help-button-south.svg</customButtonIcon>
-         <customButtonIcon button="button_a_SNES">./_inc/images/help-button-south.svg</customButtonIcon>
-         <customButtonIcon button="button_a_switch">./_inc/images/help-button-east.svg</customButtonIcon>
-         <!-- North Button -->
-         <customButtonIcon button="button_y_XBOX">./_inc/images/help-button-north.svg</customButtonIcon>
-         <customButtonIcon button="button_y_PS">./_inc/images/help-button-north.svg</customButtonIcon>
-         <customButtonIcon button="button_y_SNES">./_inc/images/help-button-north.svg</customButtonIcon>
-         <customButtonIcon button="button_y_switch">./_inc/images/help-button-west.svg</customButtonIcon>
-         <!-- West Button -->
-         <customButtonIcon button="button_x_XBOX">./_inc/images/help-button-west.svg</customButtonIcon>
-         <customButtonIcon button="button_x_PS">./_inc/images/help-button-west.svg</customButtonIcon>
-         <customButtonIcon button="button_x_SNES">./_inc/images/help-button-west.svg</customButtonIcon>
-         <customButtonIcon button="button_x_switch">./_inc/images/help-button-north.svg</customButtonIcon>
-         <!-- Left Stick Click -->
-         <customButtonIcon button="thumbstick_click">./_inc/images/help-left-stick-click.svg</customButtonIcon>
       </helpsystem>
       <image name="helpBackground">
          <origin>0 1</origin>
@@ -172,7 +150,8 @@ license:          creative commons CC-BY-NC-SA
          <textlist name="game-list">
             <origin>0 0</origin>
             <fontPath>${fontBold}</fontPath>
-            <selectorColor>${gamelistSelectorColor}</selectorColor>
+            <selectorColor>00000000</selectorColor>
+            <selectedBackgroundColor>${gamelistSelectorColor}</selectedBackgroundColor>
             <primaryColor>${gamelistPrimaryColor}</primaryColor>
             <secondaryColor>${gamelistSecondaryColor}</secondaryColor>
             <selectedColor>${gamelistSelectedColor}</selectedColor>
@@ -190,8 +169,8 @@ license:          creative commons CC-BY-NC-SA
       <view name="gamelist">
          <video name="game-art">
             <origin>0.5 0.5</origin>
-            <imageCornerRadius>0.02</imageCornerRadius>
-            <videoCornerRadius>0.02</videoCornerRadius>
+            <imageCornerRadius>0.005</imageCornerRadius>
+            <videoCornerRadius>0.005</videoCornerRadius>
             <pillarboxes>false</pillarboxes>
             <delay>3</delay>
             <iterationCount>1</iterationCount>

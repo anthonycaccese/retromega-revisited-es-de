@@ -11,6 +11,7 @@
 
    <fontSize>small</fontSize>
    <fontSize>medium</fontSize>
+   <fontSize>large</fontSize>
 
    <transitions name="slide">
       <label>Slide</label>
@@ -54,17 +55,14 @@
    <colorScheme name="colorful-dark">
       <label>Colorful (Dark)</label>
    </colorScheme>
+   <colorScheme name="oled">
+      <label>OLED</label>
+   </colorScheme>
    <colorScheme name="dmg">
       <label>DMG</label>
    </colorScheme>
    <colorScheme name="famicom">
       <label>Famicom</label>
-   </colorScheme>
-   <colorScheme name="indigo-light">
-      <label>Indigo (Light)</label>
-   </colorScheme>
-   <colorScheme name="indigo-dark">
-      <label>Indigo (Dark)</label>
    </colorScheme>
 
    <!-- List: Metadata Off -->
