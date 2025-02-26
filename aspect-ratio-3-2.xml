@@ -73,12 +73,12 @@ based on 720x480
    ///
    -->
    <variant name="
-      gamelist-basic
-      gamelist-metadata-off-boxart,
-      gamelist-metadata-off-miximage,
-      gamelist-metadata-off-screenshot,
-      gamelist-metadata-off-titlescreen,
-      gamelist-metadata-off-physicalmedia
+      gamelist-list-basic
+      gamelist-list-cover,
+      gamelist-list-miximage,
+      gamelist-list-screenshot,
+      gamelist-list-titlescreen,
+      gamelist-list-physicalmedia
       ">
       <view name="gamelist">
          <textlist name="game-list">
@@ -104,7 +104,7 @@ based on 720x480
       </fontSize>
    </variant>
    <variant name="
-      gamelist-basic
+      gamelist-list-basic
       ">
       <view name="gamelist">
          <textlist name="game-list">
@@ -124,11 +124,11 @@ based on 720x480
       </fontSize>
    </variant>
    <variant name="
-      gamelist-metadata-off-boxart,
-      gamelist-metadata-off-miximage,
-      gamelist-metadata-off-screenshot,
-      gamelist-metadata-off-titlescreen,
-      gamelist-metadata-off-physicalmedia
+      gamelist-list-cover,
+      gamelist-list-miximage,
+      gamelist-list-screenshot,
+      gamelist-list-titlescreen,
+      gamelist-list-physicalmedia
       ">
       <view name="gamelist">
          <textlist name="game-list">

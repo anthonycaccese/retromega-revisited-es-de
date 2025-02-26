@@ -15,6 +15,7 @@ based on 853x480
          <posDimmed>0.5 0.942708333333333</posDimmed>
          <fontSize>${helpSystemFontSize}</fontSize>
          <entrySpacing>0.018757327080891</entrySpacing><!-- 16 -->
+         <iconTextSpacing>0.00468933</iconTextSpacing><!-- 4 -->
       </helpsystem>
       <image name="helpBackground">
          <size>1 0.114583333333333</size><!-- 100% 55 -->
@@ -49,7 +50,7 @@ based on 853x480
       <text name="system-name">
          <pos>0.053125 0.442708333333333</pos><!-- 34 212.5 -->
          <size>0.39375 0.525</size><!-- 252 252 -->
-         <fontSize>${systemNameFontSize}</fontSize><!-- 36 -->
+         <fontSize>${systemNameFontSize}</fontSize>
       </text>
       <image name="system-artwork">
          <pos>0.731535756154748 0.442708333333333</pos><!-- 500 624 -->
@@ -126,12 +127,12 @@ based on 853x480
    ///
    -->
    <variant name="
-      gamelist-basic
-      gamelist-metadata-off-boxart,
-      gamelist-metadata-off-miximage,
-      gamelist-metadata-off-screenshot,
-      gamelist-metadata-off-titlescreen,
-      gamelist-metadata-off-physicalmedia
+      gamelist-list-basic
+      gamelist-list-cover,
+      gamelist-list-miximage,
+      gamelist-list-screenshot,
+      gamelist-list-titlescreen,
+      gamelist-list-physicalmedia
       ">
       <view name="gamelist">
          <textlist name="game-list">
@@ -163,7 +164,7 @@ based on 853x480
       </fontSize>
    </variant>
    <variant name="
-      gamelist-basic
+      gamelist-list-basic
       ">
       <view name="gamelist">
          <textlist name="game-list">
@@ -173,11 +174,11 @@ based on 853x480
       </view>
    </variant>
    <variant name="
-      gamelist-metadata-off-boxart,
-      gamelist-metadata-off-miximage,
-      gamelist-metadata-off-screenshot,
-      gamelist-metadata-off-titlescreen,
-      gamelist-metadata-off-physicalmedia
+      gamelist-list-cover,
+      gamelist-list-miximage,
+      gamelist-list-screenshot,
+      gamelist-list-titlescreen,
+      gamelist-list-physicalmedia
       ">
       <view name="gamelist">
          <textlist name="game-list">
@@ -189,9 +190,9 @@ based on 853x480
       </view>
    </variant>
    <variant name="
-      gamelist-metadata-off-boxart,
-      gamelist-metadata-off-miximage,
-      gamelist-metadata-off-physicalmedia,
+      gamelist-list-cover,
+      gamelist-list-miximage,
+      gamelist-list-physicalmedia,
       ">
       <view name="gamelist">
          <video name="game-art">
@@ -201,8 +202,8 @@ based on 853x480
       </view>
    </variant>
    <variant name="
-      gamelist-metadata-off-screenshot,
-      gamelist-metadata-off-titlescreen,
+      gamelist-list-screenshot,
+      gamelist-list-titlescreen,
       ">
       <view name="gamelist">
          <video name="game-art">

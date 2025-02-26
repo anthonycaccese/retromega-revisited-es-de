@@ -139,17 +139,17 @@ license:          creative commons CC-BY-NC-SA
    ///
    -->
    <variant name="
-      gamelist-basic
-      gamelist-metadata-off-boxart,
-      gamelist-metadata-off-miximage,
-      gamelist-metadata-off-screenshot,
-      gamelist-metadata-off-titlescreen,
-      gamelist-metadata-off-physicalmedia
+      gamelist-list-basic
+      gamelist-list-cover,
+      gamelist-list-miximage,
+      gamelist-list-screenshot,
+      gamelist-list-titlescreen,
+      gamelist-list-physicalmedia
       ">
       <view name="gamelist">
          <textlist name="game-list">
             <origin>0 0</origin>
-            <fontPath>${fontBold}</fontPath>
+            <fontPath>${fontRegular}</fontPath>
             <selectorColor>00000000</selectorColor>
             <selectedBackgroundColor>${gamelistSelectorColor}</selectedBackgroundColor>
             <primaryColor>${gamelistPrimaryColor}</primaryColor>
@@ -160,11 +160,11 @@ license:          creative commons CC-BY-NC-SA
       </view>
    </variant>
    <variant name="
-      gamelist-metadata-off-boxart,
-      gamelist-metadata-off-miximage,
-      gamelist-metadata-off-screenshot,
-      gamelist-metadata-off-titlescreen,
-      gamelist-metadata-off-physicalmedia
+      gamelist-list-cover,
+      gamelist-list-miximage,
+      gamelist-list-screenshot,
+      gamelist-list-titlescreen,
+      gamelist-list-physicalmedia
       ">
       <view name="gamelist">
          <video name="game-art">
@@ -178,35 +178,35 @@ license:          creative commons CC-BY-NC-SA
          </video>
       </view>
    </variant>
-   <variant name="gamelist-metadata-off-boxart">
+   <variant name="gamelist-list-cover">
       <view name="gamelist">
          <video name="game-art">
             <imageType>cover,screenshot</imageType>
          </video>
       </view>
    </variant>
-   <variant name="gamelist-metadata-off-miximage">
+   <variant name="gamelist-list-miximage">
       <view name="gamelist">
          <video name="game-art">
             <imageType>miximage</imageType>
          </video>
       </view>
    </variant>
-   <variant name="gamelist-metadata-off-screenshot">
+   <variant name="gamelist-list-screenshot">
       <view name="gamelist">
          <video name="game-art">
             <imageType>screenshot</imageType>
          </video>
       </view>
    </variant>
-   <variant name="gamelist-metadata-off-titlescreen">
+   <variant name="gamelist-list-titlescreen">
       <view name="gamelist">
          <video name="game-art">
             <imageType>titlescreen</imageType>
          </video>
       </view>
    </variant>
-   <variant name="gamelist-metadata-off-physicalmedia">
+   <variant name="gamelist-list-physicalmedia">
       <view name="gamelist">
          <video name="game-art">
             <imageType>physicalmedia</imageType>
@@ -219,7 +219,7 @@ license:          creative commons CC-BY-NC-SA
    Gamelist View - Carousel Variants
    ///
    -->
-   <variant name="gamelist-carousel">
+   <variant name="gamelist-carousel-cover">
       <include>./_inc/systems/coversize/${systemCoverSize}.xml</include>
       <view name="gamelist">
          <carousel name="game-carousel">

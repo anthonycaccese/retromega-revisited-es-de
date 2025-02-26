@@ -17,9 +17,9 @@
          <gamelistCountColor>797979</gamelistCountColor>
          <gamelistBorderColor>D7D7D7</gamelistBorderColor>
          <gamelistSelectorColor>${systemColor}</gamelistSelectorColor>
-         <gamelistPrimaryColor>797979</gamelistPrimaryColor>
-         <gamelistSecondaryColor>797979</gamelistSecondaryColor>
-         <gamelistSelectedColor>F3F3F3</gamelistSelectedColor>
+         <gamelistPrimaryColor>444444</gamelistPrimaryColor>
+         <gamelistSecondaryColor>444444</gamelistSecondaryColor>
+         <gamelistSelectedColor>ffffff</gamelistSelectedColor>
       </variables>
    </colorScheme>
    <colorScheme name="colorful-dark">
@@ -50,8 +50,8 @@
          <!-- Global -->
          <backgroundColor>000000</backgroundColor>
          <helpBackgroundColor>000000</helpBackgroundColor>
-         <helpIconColor>F3F3F3</helpIconColor>
-         <helpTextColor>F3F3F3</helpTextColor>
+         <helpIconColor>${systemColor}</helpIconColor>
+         <helpTextColor>ffffffbb</helpTextColor>
          <!-- System View -->
          <systemBackgroundColor>${systemColor}</systemBackgroundColor>
          <systemViewNameColor>FFFFFF</systemViewNameColor>
