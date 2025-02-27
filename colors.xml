@@ -6,6 +6,8 @@
          <helpBackgroundColor>F3F3F3</helpBackgroundColor>
          <helpIconColor>444444</helpIconColor>
          <helpTextColor>666666</helpTextColor>
+         <systemStatusSystemViewColor>FFFFFF</systemStatusSystemViewColor>
+         <systemStatusGamelistViewColor>333333</systemStatusGamelistViewColor>
          <!-- System View -->
          <systemBackgroundColor>${systemColor}</systemBackgroundColor>
          <systemViewNameColor>FFFFFF</systemViewNameColor>
@@ -27,8 +29,10 @@
          <!-- Global -->
          <backgroundColor>111111</backgroundColor>
          <helpBackgroundColor>111111</helpBackgroundColor>
-         <helpIconColor>F3F3F399</helpIconColor>
-         <helpTextColor>F3F3F399</helpTextColor>
+         <helpIconColor>ffffffbb</helpIconColor>
+         <helpTextColor>ffffffbb</helpTextColor>
+         <systemStatusSystemViewColor>FFFFFF</systemStatusSystemViewColor>
+         <systemStatusGamelistViewColor>FFFFFF</systemStatusGamelistViewColor>
          <!-- System View -->
          <systemBackgroundColor>${systemColor}</systemBackgroundColor>
          <systemViewNameColor>FFFFFF</systemViewNameColor>
@@ -40,9 +44,9 @@
          <gamelistCountColor>C9C9C9</gamelistCountColor>
          <gamelistBorderColor>2D2D2D</gamelistBorderColor>
          <gamelistSelectorColor>${systemColor}</gamelistSelectorColor>
-         <gamelistPrimaryColor>F3F3F355</gamelistPrimaryColor>
-         <gamelistSecondaryColor>F3F3F355</gamelistSecondaryColor>
-         <gamelistSelectedColor>F3F3F3</gamelistSelectedColor>
+         <gamelistPrimaryColor>ffffff77</gamelistPrimaryColor>
+         <gamelistSecondaryColor>ffffff77</gamelistSecondaryColor>
+         <gamelistSelectedColor>ffffff</gamelistSelectedColor>
       </variables>
    </colorScheme>
    <colorScheme name="oled">
@@ -52,6 +56,8 @@
          <helpBackgroundColor>000000</helpBackgroundColor>
          <helpIconColor>${systemColor}</helpIconColor>
          <helpTextColor>ffffffbb</helpTextColor>
+         <systemStatusSystemViewColor>FFFFFF</systemStatusSystemViewColor>
+         <systemStatusGamelistViewColor>FFFFFF</systemStatusGamelistViewColor>
          <!-- System View -->
          <systemBackgroundColor>${systemColor}</systemBackgroundColor>
          <systemViewNameColor>FFFFFF</systemViewNameColor>
@@ -61,7 +67,7 @@
          <!-- Gamelist View -->
          <gamelistViewNameColor>FFFFFF</gamelistViewNameColor>
          <gamelistCountColor>C9C9C9</gamelistCountColor>
-         <gamelistBorderColor>444444</gamelistBorderColor>
+         <gamelistBorderColor>ffffff33</gamelistBorderColor>
          <gamelistSelectorColor>${systemColor}</gamelistSelectorColor>
          <gamelistPrimaryColor>ffffff77</gamelistPrimaryColor>
          <gamelistSecondaryColor>ffffff77</gamelistSecondaryColor>
@@ -75,6 +81,8 @@
          <helpBackgroundColor>AAA7A6</helpBackgroundColor>
          <helpIconColor>444444</helpIconColor>
          <helpTextColor>333333</helpTextColor>
+         <systemStatusSystemViewColor>000000</systemStatusSystemViewColor>
+         <systemStatusGamelistViewColor>000000</systemStatusGamelistViewColor>
          <!-- System View -->
          <systemBackgroundColor>959290</systemBackgroundColor>
          <systemViewNameColor>1D1D1C</systemViewNameColor>
@@ -98,6 +106,8 @@
          <helpBackgroundColor>DCD6B6</helpBackgroundColor>
          <helpIconColor>000000BB</helpIconColor>
          <helpTextColor>000000AA</helpTextColor>
+         <systemStatusSystemViewColor>DCD6B6</systemStatusSystemViewColor>
+         <systemStatusGamelistViewColor>000000</systemStatusGamelistViewColor>
          <!-- System View -->
          <systemBackgroundColor>711521</systemBackgroundColor>
          <systemViewNameColor>DCD6B6</systemViewNameColor>

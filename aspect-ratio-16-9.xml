@@ -20,20 +20,27 @@ based on 853x480
       <image name="helpBackground">
          <size>1 0.114583333333333</size><!-- 100% 55 -->
       </image>
+      <systemstatus name="status-bar">
+         <pos>0.98007034 0.057291666666667</pos><!-- 836 32 -->
+         <height>${systemStatusHeight}</height>
+      </systemstatus>
    </view>
    <fontSize name="small">
       <variables>
          <helpSystemFontSize>0.033333333333333</helpSystemFontSize><!-- 16 -->
+         <systemStatusHeight>0.04166667</systemStatusHeight><!-- 20 -->
       </variables>
    </fontSize>
    <fontSize name="medium">
       <variables>
          <helpSystemFontSize>0.041666666666667</helpSystemFontSize><!-- 20 -->
+         <systemStatusHeight>0.05</systemStatusHeight><!-- 24 -->
       </variables>
    </fontSize>
    <fontSize name="large">
       <variables>
          <helpSystemFontSize>0.04583333</helpSystemFontSize><!-- 22 -->
+         <systemStatusHeight>0.05416667</systemStatusHeight><!-- 26 -->
       </variables>
    </fontSize>
 
@@ -86,10 +93,6 @@ based on 853x480
          <pos>0.0375 0.057291666666667</pos><!-- 24 32 -->
          <fontSize>${gamelistSystemNameFontSize}</fontSize>
       </text>
-      <gamelistinfo name="system-count">
-         <pos>0.95 0.057291666666667</pos><!-- 608 32 -->
-         <fontSize>0.041666666666667</fontSize><!-- 20 -->
-      </gamelistinfo>
       <image name="top-border">
          <pos>0.5 0.116666666666667</pos><!-- 50% 56 -->
          <size>0.96875 0.002083333333333</size><!-- 620 1 -->

@@ -54,7 +54,7 @@
       <selectable>true</selectable>
       <systemToSystem>slide</systemToSystem>
       <systemToGamelist>slide</systemToGamelist>
-      <gamelistToGamelist>slide</gamelistToGamelist>
+      <gamelistToGamelist>instant</gamelistToGamelist>
       <gamelistToSystem>slide</gamelistToSystem>
       <startupToSystem>instant</startupToSystem>
       <startupToGamelist>instant</startupToGamelist>
