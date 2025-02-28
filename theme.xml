@@ -47,10 +47,10 @@ license:          creative commons CC-BY-NC-SA
       <clock name="clock">
          <opacity>0</opacity>
       </clock>
-      <systemstatus name="status-bar">
+      <systemstatus name="system-status">
          <origin>1 0.5</origin>
          <fontPath>${fontRegular}</fontPath>
-         <textRelativeScale>0.6</textRelativeScale>
+         <textRelativeScale>0.75</textRelativeScale>
          <customIcon icon="icon_bluetooth">./_inc/images/icon-bluetooth.svg</customIcon>
          <customIcon icon="icon_wifi">./_inc/images/icon-wifi.svg</customIcon>
          <customIcon icon="icon_cellular">./_inc/images/icon-cellular.svg</customIcon>
@@ -60,15 +60,24 @@ license:          creative commons CC-BY-NC-SA
          <customIcon icon="icon_battery_medium">./_inc/images/icon-battery-medium.svg</customIcon>
          <customIcon icon="icon_battery_low">./_inc/images/icon-battery-low.svg</customIcon>
       </systemstatus>
-      <helpsystem name="help">
-         <origin>0 0.5</origin>
-         <originDimmed>0.5 0.5</originDimmed>
+      <helpsystem name="
+         help-system-view-left,
+         help-system-view-right,
+         help-gamelist-view-left,
+         help-gamelist-view-right,
+         help-menu-view
+         ">
          <iconColor>${helpIconColor}</iconColor>
          <textColor>${helpTextColor}</textColor>
-         <fontPath>${fontRegular}</fontPath>
+         <fontPath>${fontLight}</fontPath>
          <letterCase>capitalize</letterCase>
       </helpsystem>
-      <image name="helpBackground">
+      <helpsystem name="help-menu-view">
+         <scope>menu</scope>
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.95</pos>
+      </helpsystem>
+      <image name="help-background">
          <origin>0 1</origin>
          <pos>0 1</pos>
          <path>${spacerImage}</path>
@@ -85,8 +94,8 @@ license:          creative commons CC-BY-NC-SA
    ///
    -->
    <view name="system">
-      <systemstatus name="status-bar">
-         <color>${systemStatusSystemViewColor}</color>
+      <systemstatus name="system-status">
+         <color>${systemStatusColor}</color>
       </systemstatus>
       <carousel name="carousel">
          <pos>1 1</pos>
@@ -118,6 +127,18 @@ license:          creative commons CC-BY-NC-SA
          <brightness>${systemArtworkBrigtness}</brightness>
          <zIndex>3</zIndex>
       </image>
+      <helpsystem name="
+         help-system-view-left,
+         help-system-view-right
+         ">
+         <scope>view</scope>
+      </helpsystem>
+      <helpsystem name="
+         help-gamelist-view-left,
+         help-gamelist-view-right
+         ">
+         <scope>none</scope>
+      </helpsystem>
    </view>
 
    <!--
@@ -135,8 +156,8 @@ license:          creative commons CC-BY-NC-SA
       <text name="system-name">
          <text>${systemName}</text>
       </text>
-      <systemstatus name="status-bar">
-         <color>${systemStatusGamelistViewColor}</color>
+      <systemstatus name="system-status">
+         <color>${gamelistStatusColor}</color>
       </systemstatus>
       <image name="top-border,bottom-border">
          <origin>0.5 0</origin>
@@ -148,6 +169,18 @@ license:          creative commons CC-BY-NC-SA
       <image name="bottom-border">
          <stationary>betweenViews</stationary>
       </image>
+      <helpsystem name="
+         help-system-view-left,
+         help-system-view-right
+         ">
+         <scope>none</scope>
+      </helpsystem>
+      <helpsystem name="
+         help-gamelist-view-left,
+         help-gamelist-view-right
+         ">
+         <scope>view</scope>
+      </helpsystem>
    </view>
 
    <!--
@@ -156,12 +189,13 @@ license:          creative commons CC-BY-NC-SA
    ///
    -->
    <variant name="
-      gamelist-list-basic
       gamelist-list-cover,
-      gamelist-list-miximage,
       gamelist-list-screenshot,
+      gamelist-list-screenshot-marquee,
       gamelist-list-titlescreen,
-      gamelist-list-physicalmedia
+      gamelist-list-physicalmedia,
+      gamelist-list-miximage,
+      gamelist-list-basic
       ">
       <view name="gamelist">
          <textlist name="game-list">
@@ -178,10 +212,11 @@ license:          creative commons CC-BY-NC-SA
    </variant>
    <variant name="
       gamelist-list-cover,
-      gamelist-list-miximage,
       gamelist-list-screenshot,
+      gamelist-list-screenshot-marquee,
       gamelist-list-titlescreen,
-      gamelist-list-physicalmedia
+      gamelist-list-physicalmedia,
+      gamelist-list-miximage
       ">
       <view name="gamelist">
          <video name="game-art">
@@ -198,22 +233,24 @@ license:          creative commons CC-BY-NC-SA
    <variant name="gamelist-list-cover">
       <view name="gamelist">
          <video name="game-art">
-            <imageType>cover,screenshot</imageType>
+            <imageType>cover</imageType>
          </video>
       </view>
    </variant>
-   <variant name="gamelist-list-miximage">
-      <view name="gamelist">
-         <video name="game-art">
-            <imageType>miximage</imageType>
-         </video>
-      </view>
-   </variant>
-   <variant name="gamelist-list-screenshot">
+   <variant name="gamelist-list-screenshot,gamelist-list-screenshot-marquee">
       <view name="gamelist">
          <video name="game-art">
             <imageType>screenshot</imageType>
          </video>
+      </view>
+   </variant>
+   <variant name="gamelist-list-screenshot-marquee">
+      <view name="gamelist">
+         <image name="game-marquee">
+            <origin>0.5 0.5</origin>
+            <imageType>marquee</imageType>
+            <zIndex>100</zIndex>
+         </image>
       </view>
    </variant>
    <variant name="gamelist-list-titlescreen">
@@ -227,6 +264,13 @@ license:          creative commons CC-BY-NC-SA
       <view name="gamelist">
          <video name="game-art">
             <imageType>physicalmedia</imageType>
+         </video>
+      </view>
+   </variant>
+   <variant name="gamelist-list-miximage">
+      <view name="gamelist">
+         <video name="game-art">
+            <imageType>miximage</imageType>
          </video>
       </view>
    </variant>

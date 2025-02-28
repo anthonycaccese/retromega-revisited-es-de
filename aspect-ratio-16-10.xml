@@ -17,7 +17,7 @@ based on 768x480
          <entrySpacing>0.021875</entrySpacing><!-- 14 -->
          <iconTextSpacing>0.00625</iconTextSpacing><!-- 4 -->
       </helpsystem>
-      <image name="helpBackground">
+      <image name="help-background">
          <size>1 0.114583333333333</size><!-- 100% 55 -->
       </image>
    </view>
