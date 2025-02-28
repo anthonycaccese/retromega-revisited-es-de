@@ -58,7 +58,7 @@ license:          creative commons CC-BY-NC-SA
          <customIcon icon="icon_battery_full">./_inc/images/icon-battery-full.svg</customIcon>
          <customIcon icon="icon_battery_high">./_inc/images/icon-battery-high.svg</customIcon>
          <customIcon icon="icon_battery_medium">./_inc/images/icon-battery-medium.svg</customIcon>
-         <customIcon icon="icon_battery_low">./_inc/images/icon-battery-low.svg</customIcon>
+         <customIcon icon="icon_battery_low">./_inc/images/icon-battery-wifi.svg</customIcon>
       </systemstatus>
       <helpsystem name="
          help-system-view-left,
@@ -96,6 +96,8 @@ license:          creative commons CC-BY-NC-SA
    <view name="system">
       <systemstatus name="system-status">
          <color>${systemStatusColor}</color>
+         <backgroundColor>${systemStatusBackgroundColor}</backgroundColor>
+         <backgroundCornerRadius>0.005</backgroundCornerRadius>
       </systemstatus>
       <carousel name="carousel">
          <pos>1 1</pos>

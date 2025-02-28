@@ -10,6 +10,7 @@
          <systemBackgroundColor>${systemColor}</systemBackgroundColor>
          <systemViewNameColor>FFFFFF</systemViewNameColor>
          <systemStatusColor>F3F3F3</systemStatusColor>
+         <systemStatusBackgroundColor>00000022</systemStatusBackgroundColor>
          <systemArtworkColor>FFFFFF</systemArtworkColor>
          <systemArtworkSaturation>1</systemArtworkSaturation>
          <systemArtworkBrigtness>0</systemArtworkBrigtness>
@@ -34,6 +35,7 @@
          <systemBackgroundColor>${systemColor}</systemBackgroundColor>
          <systemViewNameColor>FFFFFF</systemViewNameColor>
          <systemStatusColor>FFFFFF</systemStatusColor>
+         <systemStatusBackgroundColor>00000022</systemStatusBackgroundColor>
          <systemArtworkColor>FFFFFF</systemArtworkColor>
          <systemArtworkSaturation>1</systemArtworkSaturation>
          <systemArtworkBrigtness>0</systemArtworkBrigtness>
@@ -58,6 +60,7 @@
          <systemBackgroundColor>${systemColor}</systemBackgroundColor>
          <systemViewNameColor>FFFFFF</systemViewNameColor>
          <systemStatusColor>FFFFFF</systemStatusColor>
+         <systemStatusBackgroundColor>00000022</systemStatusBackgroundColor>
          <systemArtworkColor>FFFFFF</systemArtworkColor>
          <systemArtworkSaturation>1</systemArtworkSaturation>
          <systemArtworkBrigtness>0</systemArtworkBrigtness>
@@ -82,6 +85,7 @@
          <systemBackgroundColor>959290</systemBackgroundColor>
          <systemViewNameColor>1D1D1C</systemViewNameColor>
          <systemStatusColor>1D1D1C</systemStatusColor>
+         <systemStatusBackgroundColor>AAA7A6aa</systemStatusBackgroundColor>
          <systemArtworkColor>FFFFFF</systemArtworkColor>
          <systemArtworkSaturation>1</systemArtworkSaturation>
          <systemArtworkBrigtness>0</systemArtworkBrigtness>
@@ -106,6 +110,7 @@
          <systemBackgroundColor>711521</systemBackgroundColor>
          <systemViewNameColor>DCD6B6</systemViewNameColor>
          <systemStatusColor>DCD6B6</systemStatusColor>
+         <systemStatusBackgroundColor>711521aa</systemStatusBackgroundColor>
          <systemArtworkColor>DCD6B6</systemArtworkColor>
          <systemArtworkSaturation>1</systemArtworkSaturation>
          <systemArtworkBrigtness>0</systemArtworkBrigtness>
