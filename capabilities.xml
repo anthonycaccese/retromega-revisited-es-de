@@ -34,8 +34,8 @@
    <colorScheme name="colorful-dark">
       <label>Colorful (Dark)</label>
    </colorScheme>
-   <colorScheme name="oled">
-      <label>OLED</label>
+   <colorScheme name="colorful-oled">
+      <label>Colorful (OLED)</label>
    </colorScheme>
    <colorScheme name="dmg">
       <label>DMG</label>

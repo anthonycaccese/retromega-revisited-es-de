@@ -47,7 +47,7 @@
          <gamelistSelectedColor>ffffff</gamelistSelectedColor>
       </variables>
    </colorScheme>
-   <colorScheme name="oled">
+   <colorScheme name="colorful-oled">
       <variables>
          <!-- Global -->
          <backgroundColor>000000</backgroundColor>
