@@ -68,8 +68,8 @@ based on 853x480
    -->
    <view name="system">
       <image name="stripe">
-         <pos>0.76201641 0</pos><!-- 650 0 -->
-         <size>0.21101993 1</size><!-- 180 100% -->
+         <pos>0.731535756154748 0</pos><!-- 624 0 -->
+         <size>0.15943728 1</size><!-- 136 100% -->
       </image>
       <text name="system-name">
          <pos>0.03985932 0.442708333333333</pos><!-- 34 212.5 -->
