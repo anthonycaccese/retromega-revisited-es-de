@@ -11,7 +11,8 @@ based on 720x480
    -->
    <view name="system,gamelist">
       <systemstatus name="system-status">
-         <pos>0.98333333 0.057291666666667</pos><!-- 708 32 -->
+         <pos>0.97777778 0.057291666666667</pos><!-- 704 32 -->
+         <backgroundPadding>0.01666667 0.02083333</backgroundPadding><!-- 12 10 -->
          <height>${systemStatusHeight}</height>
       </systemstatus>
       <helpsystem name="
@@ -109,7 +110,7 @@ based on 720x480
    ///
    -->
    <view name="gamelist">
-      <text name="system-name">
+      <text name="system-name,custom-collection-name">
          <pos>0.03333333 0.057291666666667</pos><!-- 24 32 -->
          <fontSize>${gamelistSystemNameFontSize}</fontSize>
       </text>
