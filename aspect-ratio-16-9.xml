@@ -72,7 +72,7 @@ based on 853x480
          <size>0.15943728 1</size><!-- 136 100% -->
       </image>
       <text name="system-name">
-         <pos>0.03985932 0.442708333333333</pos><!-- 34 212.5 -->
+         <pos>0.05158265 0.442708333333333</pos><!-- 44 212.5 -->
          <size>0.39390387 0.525</size><!-- 336 252 -->
          <fontSize>${systemNameFontSize}</fontSize>
       </text>
