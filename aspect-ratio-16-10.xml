@@ -167,7 +167,7 @@ based on 768x480
       gamelist-list-titlescreen,
       gamelist-list-physicalmedia,
       gamelist-list-miximage,
-      gamelist-list-basic
+      gamelist-list
       ">
       <view name="gamelist">
          <textlist name="game-list">
@@ -199,7 +199,7 @@ based on 768x480
       </fontSize>
    </variant>
    <variant name="
-      gamelist-list-basic
+      gamelist-list
       ">
       <view name="gamelist">
          <textlist name="game-list">
