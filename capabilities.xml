@@ -1,7 +1,6 @@
 <themeCapabilities>
-
-   <!-- Temporary theme name to avoid collisions with the original theme -->
-   <themeName>Retro Mega (Revisited HQ)</themeName>
+   
+   <themeName>Retro Mega (Revisited)</themeName>
 
    <aspectRatio>16:9</aspectRatio>
    <aspectRatio>16:10</aspectRatio>
