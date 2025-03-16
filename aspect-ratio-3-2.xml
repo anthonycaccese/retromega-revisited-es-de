@@ -12,7 +12,8 @@ based on 720x480
    <view name="system,gamelist">
       <systemstatus name="system-status">
          <pos>0.97777778 0.057291666666667</pos><!-- 704 32 -->
-         <backgroundPadding>0.01666667 0.02083333</backgroundPadding><!-- 12 10 -->
+         <backgroundHorizontalPadding>0.00833334 0.00833334</backgroundHorizontalPadding><!-- 6 -->
+         <backgroundVerticalPadding>0.01041667 0.01041667</backgroundVerticalPadding><!-- 5 -->
          <height>${systemStatusHeight}</height>
       </systemstatus>
       <helpsystem name="
