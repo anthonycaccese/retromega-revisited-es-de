@@ -4,22 +4,24 @@
          <!-- Global -->
          <backgroundColor>F3F3F3</backgroundColor>
          <helpBackgroundColor>F3F3F3</helpBackgroundColor>
-         <helpIconColor>444444</helpIconColor>
-         <helpTextColor>666666</helpTextColor>
+         <helpIconColor>4d4d4c</helpIconColor>
+         <helpTextColor>1D1D1C</helpTextColor>
          <!-- System View -->
          <systemBackgroundColor>${systemColor}</systemBackgroundColor>
          <systemViewNameColor>FFFFFF</systemViewNameColor>
+         <systemStatusColor>F3F3F3</systemStatusColor>
+         <systemStatusBackgroundColor>00000022</systemStatusBackgroundColor>
          <systemArtworkColor>FFFFFF</systemArtworkColor>
          <systemArtworkSaturation>1</systemArtworkSaturation>
          <systemArtworkBrigtness>0</systemArtworkBrigtness>
          <!-- Gamelist View -->
          <gamelistViewNameColor>1D1D1C</gamelistViewNameColor>
-         <gamelistCountColor>797979</gamelistCountColor>
+         <gamelistStatusColor>1D1D1C</gamelistStatusColor>
          <gamelistBorderColor>D7D7D7</gamelistBorderColor>
          <gamelistSelectorColor>${systemColor}</gamelistSelectorColor>
-         <gamelistPrimaryColor>797979</gamelistPrimaryColor>
-         <gamelistSecondaryColor>797979</gamelistSecondaryColor>
-         <gamelistSelectedColor>F3F3F3</gamelistSelectedColor>
+         <gamelistPrimaryColor>444444</gamelistPrimaryColor>
+         <gamelistSecondaryColor>444444</gamelistSecondaryColor>
+         <gamelistSelectedColor>ffffff</gamelistSelectedColor>
       </variables>
    </colorScheme>
    <colorScheme name="colorful-dark">
@@ -27,22 +29,49 @@
          <!-- Global -->
          <backgroundColor>111111</backgroundColor>
          <helpBackgroundColor>111111</helpBackgroundColor>
-         <helpIconColor>F3F3F399</helpIconColor>
-         <helpTextColor>F3F3F399</helpTextColor>
+         <helpIconColor>ffffffbb</helpIconColor>
+         <helpTextColor>ffffffbb</helpTextColor>
          <!-- System View -->
          <systemBackgroundColor>${systemColor}</systemBackgroundColor>
          <systemViewNameColor>FFFFFF</systemViewNameColor>
+         <systemStatusColor>FFFFFF</systemStatusColor>
+         <systemStatusBackgroundColor>00000022</systemStatusBackgroundColor>
          <systemArtworkColor>FFFFFF</systemArtworkColor>
          <systemArtworkSaturation>1</systemArtworkSaturation>
          <systemArtworkBrigtness>0</systemArtworkBrigtness>
          <!-- Gamelist View -->
          <gamelistViewNameColor>FFFFFF</gamelistViewNameColor>
-         <gamelistCountColor>C9C9C9</gamelistCountColor>
+         <gamelistStatusColor>FFFFFF</gamelistStatusColor>
          <gamelistBorderColor>2D2D2D</gamelistBorderColor>
          <gamelistSelectorColor>${systemColor}</gamelistSelectorColor>
-         <gamelistPrimaryColor>F3F3F355</gamelistPrimaryColor>
-         <gamelistSecondaryColor>F3F3F355</gamelistSecondaryColor>
-         <gamelistSelectedColor>F3F3F3</gamelistSelectedColor>
+         <gamelistPrimaryColor>ffffff77</gamelistPrimaryColor>
+         <gamelistSecondaryColor>ffffff77</gamelistSecondaryColor>
+         <gamelistSelectedColor>ffffff</gamelistSelectedColor>
+      </variables>
+   </colorScheme>
+   <colorScheme name="colorful-oled">
+      <variables>
+         <!-- Global -->
+         <backgroundColor>000000</backgroundColor>
+         <helpBackgroundColor>000000</helpBackgroundColor>
+         <helpIconColor>${systemColor}</helpIconColor>
+         <helpTextColor>ffffffbb</helpTextColor>
+         <!-- System View -->
+         <systemBackgroundColor>${systemColor}</systemBackgroundColor>
+         <systemViewNameColor>FFFFFF</systemViewNameColor>
+         <systemStatusColor>FFFFFF</systemStatusColor>
+         <systemStatusBackgroundColor>00000022</systemStatusBackgroundColor>
+         <systemArtworkColor>FFFFFF</systemArtworkColor>
+         <systemArtworkSaturation>1</systemArtworkSaturation>
+         <systemArtworkBrigtness>0</systemArtworkBrigtness>
+         <!-- Gamelist View -->
+         <gamelistViewNameColor>FFFFFF</gamelistViewNameColor>
+         <gamelistStatusColor>FFFFFF</gamelistStatusColor>
+         <gamelistBorderColor>ffffff33</gamelistBorderColor>
+         <gamelistSelectorColor>${systemColor}</gamelistSelectorColor>
+         <gamelistPrimaryColor>ffffff77</gamelistPrimaryColor>
+         <gamelistSecondaryColor>ffffff77</gamelistSecondaryColor>
+         <gamelistSelectedColor>ffffff</gamelistSelectedColor>
       </variables>
    </colorScheme>
    <colorScheme name="dmg">
@@ -51,21 +80,23 @@
          <backgroundColor>AAA7A6</backgroundColor>
          <helpBackgroundColor>AAA7A6</helpBackgroundColor>
          <helpIconColor>444444</helpIconColor>
-         <helpTextColor>333333</helpTextColor>
+         <helpTextColor>1D1D1C</helpTextColor>
          <!-- System View -->
          <systemBackgroundColor>959290</systemBackgroundColor>
          <systemViewNameColor>1D1D1C</systemViewNameColor>
+         <systemStatusColor>1D1D1C</systemStatusColor>
+         <systemStatusBackgroundColor>AAA7A6aa</systemStatusBackgroundColor>
          <systemArtworkColor>FFFFFF</systemArtworkColor>
          <systemArtworkSaturation>1</systemArtworkSaturation>
          <systemArtworkBrigtness>0</systemArtworkBrigtness>
          <!-- Gamelist View -->
          <gamelistViewNameColor>1D1D1C</gamelistViewNameColor>
-         <gamelistCountColor>1D1D1C</gamelistCountColor>
+         <gamelistStatusColor>1D1D1C</gamelistStatusColor>
          <gamelistBorderColor>888888</gamelistBorderColor>
-         <gamelistSelectorColor>bfbdbc</gamelistSelectorColor>
+         <gamelistSelectorColor>1D1D1C</gamelistSelectorColor>
          <gamelistPrimaryColor>1d1d1c88</gamelistPrimaryColor>
          <gamelistSecondaryColor>1d1d1c88</gamelistSecondaryColor>
-         <gamelistSelectedColor>000000</gamelistSelectedColor>
+         <gamelistSelectedColor>ffffff</gamelistSelectedColor>
       </variables>
    </colorScheme>
    <colorScheme name="famicom">
@@ -78,63 +109,19 @@
          <!-- System View -->
          <systemBackgroundColor>711521</systemBackgroundColor>
          <systemViewNameColor>DCD6B6</systemViewNameColor>
+         <systemStatusColor>DCD6B6</systemStatusColor>
+         <systemStatusBackgroundColor>711521aa</systemStatusBackgroundColor>
          <systemArtworkColor>DCD6B6</systemArtworkColor>
          <systemArtworkSaturation>1</systemArtworkSaturation>
          <systemArtworkBrigtness>0</systemArtworkBrigtness>
          <!-- Gamelist View -->
          <gamelistViewNameColor>000000</gamelistViewNameColor>
-         <gamelistCountColor>00000099</gamelistCountColor>
+         <gamelistStatusColor>000000</gamelistStatusColor>
          <gamelistBorderColor>00000033</gamelistBorderColor>
          <gamelistSelectorColor>711521</gamelistSelectorColor>
          <gamelistPrimaryColor>00000099</gamelistPrimaryColor>
          <gamelistSecondaryColor>00000099</gamelistSecondaryColor>
          <gamelistSelectedColor>DCD6B6</gamelistSelectedColor>
-      </variables>
-   </colorScheme>
-   <colorScheme name="indigo-light">
-      <variables>
-         <!-- Global -->
-         <backgroundColor>F3F3F3</backgroundColor>
-         <helpBackgroundColor>F3F3F3</helpBackgroundColor>
-         <helpIconColor>444444</helpIconColor>
-         <helpTextColor>666666</helpTextColor>
-         <!-- System View -->
-         <systemBackgroundColor>7278D1</systemBackgroundColor>
-         <systemViewNameColor>FFFFFF</systemViewNameColor>
-         <systemArtworkColor>FFFFFF</systemArtworkColor>
-         <systemArtworkSaturation>1</systemArtworkSaturation>
-         <systemArtworkBrigtness>0</systemArtworkBrigtness>
-         <!-- Gamelist View -->
-         <gamelistViewNameColor>1D1D1C</gamelistViewNameColor>
-         <gamelistCountColor>797979</gamelistCountColor>
-         <gamelistBorderColor>D7D7D7</gamelistBorderColor>
-         <gamelistSelectorColor>7278D1</gamelistSelectorColor>
-         <gamelistPrimaryColor>797979</gamelistPrimaryColor>
-         <gamelistSecondaryColor>797979</gamelistSecondaryColor>
-         <gamelistSelectedColor>F3F3F3</gamelistSelectedColor>
-      </variables>
-   </colorScheme>
-   <colorScheme name="indigo-dark">
-      <variables>
-         <!-- Global -->
-         <backgroundColor>111111</backgroundColor>
-         <helpBackgroundColor>111111</helpBackgroundColor>
-         <helpIconColor>F3F3F399</helpIconColor>
-         <helpTextColor>F3F3F399</helpTextColor>
-         <!-- System View -->
-         <systemBackgroundColor>7278D1</systemBackgroundColor>
-         <systemViewNameColor>FFFFFF</systemViewNameColor>
-         <systemArtworkColor>FFFFFF</systemArtworkColor>
-         <systemArtworkSaturation>1</systemArtworkSaturation>
-         <systemArtworkBrigtness>0</systemArtworkBrigtness>
-         <!-- Gamelist View -->
-         <gamelistViewNameColor>FFFFFF</gamelistViewNameColor>
-         <gamelistCountColor>C9C9C9</gamelistCountColor>
-         <gamelistBorderColor>2D2D2D</gamelistBorderColor>
-         <gamelistSelectorColor>7278D1</gamelistSelectorColor>
-         <gamelistPrimaryColor>F3F3F355</gamelistPrimaryColor>
-         <gamelistSecondaryColor>F3F3F355</gamelistSecondaryColor>
-         <gamelistSelectedColor>F3F3F3</gamelistSelectedColor>
       </variables>
    </colorScheme>
 </theme>

@@ -35,6 +35,40 @@ license:          creative commons CC-BY-NC-SA
    ///
    -->
    <view name="system,gamelist">
+      <!-- Start: menu styling resets -->
+      <clock name="clock-menu-view">
+         <scope>menu</scope>
+         <origin>0 0</origin>
+         <pos>0.0075 0.01</pos>
+         <backgroundColor>222222</backgroundColor>
+         <color>cccccc</color>
+         <backgroundHorizontalPadding>0.02 0.01</backgroundHorizontalPadding>
+         <backgroundVerticalPadding>0.02 0.01</backgroundVerticalPadding>
+         <backgroundCornerRadius>0.005</backgroundCornerRadius>
+      </clock>
+      <systemstatus name="system-status-menu-view">
+         <scope>menu</scope>
+         <origin>1 0</origin>
+         <pos>0.99 0.01</pos>
+         <backgroundColor>222222</backgroundColor>
+         <color>cccccc</color>
+         <backgroundHorizontalPadding>0.0075 0.02</backgroundHorizontalPadding>
+         <backgroundVerticalPadding>0.02 0.01</backgroundVerticalPadding>
+         <backgroundCornerRadius>0.005</backgroundCornerRadius>
+      </systemstatus>
+      <helpsystem name="help-menu-view">
+         <scope>menu</scope>
+         <origin>0.5 1</origin>
+         <pos>0.5 0.9875</pos>
+         <iconColor>cccccc</iconColor>
+         <textColor>cccccc</textColor>
+         <backgroundColor>222222</backgroundColor>
+         <backgroundHorizontalPadding>0.01 0.01</backgroundHorizontalPadding>
+         <backgroundVerticalPadding>0.015 0.02</backgroundVerticalPadding>
+         <backgroundCornerRadius>0.005</backgroundCornerRadius>
+         <entryRelativeScale>0.9</entryRelativeScale>
+      </helpsystem>
+      <!-- End: menu styling resets -->
       <image name="background">
          <origin>0 0</origin>
          <pos>0 0</pos>
@@ -44,37 +78,36 @@ license:          creative commons CC-BY-NC-SA
          <color>${backgroundColor}</color>
          <zIndex>0</zIndex>
       </image>
-      <helpsystem name="help">
-         <origin>0 0.5</origin>
-         <originDimmed>0.5 0.5</originDimmed>
+      <clock name="clock">
+         <scope>view</scope>
+         <opacity>0</opacity>
+      </clock>
+      <systemstatus name="system-status">
+         <scope>view</scope>
+         <origin>1 0.5</origin>
+         <fontPath>${fontRegular}</fontPath>
+         <textRelativeScale>0.75</textRelativeScale>
+         <customIcon icon="icon_bluetooth">./_inc/images/icon-bluetooth.svg</customIcon>
+         <customIcon icon="icon_wifi">./_inc/images/icon-wifi.svg</customIcon>
+         <customIcon icon="icon_cellular">./_inc/images/icon-cellular.svg</customIcon>
+         <customIcon icon="icon_battery_charging">./_inc/images/icon-battery-charging.svg</customIcon>
+         <customIcon icon="icon_battery_full">./_inc/images/icon-battery-full.svg</customIcon>
+         <customIcon icon="icon_battery_high">./_inc/images/icon-battery-high.svg</customIcon>
+         <customIcon icon="icon_battery_medium">./_inc/images/icon-battery-medium.svg</customIcon>
+         <customIcon icon="icon_battery_low">./_inc/images/icon-battery-low.svg</customIcon>
+      </systemstatus>
+      <helpsystem name="
+         help-system-view-left,
+         help-system-view-right,
+         help-gamelist-view-left,
+         help-gamelist-view-right
+         ">
          <iconColor>${helpIconColor}</iconColor>
          <textColor>${helpTextColor}</textColor>
-         <fontPath>${fontRegular}</fontPath>
+         <fontPath>${fontLight}</fontPath>
          <letterCase>capitalize</letterCase>
-         <!-- East Button -->
-         <customButtonIcon button="button_b_XBOX">./_inc/images/help-button-east.svg</customButtonIcon>
-         <customButtonIcon button="button_b_PS">./_inc/images/help-button-east.svg</customButtonIcon>
-         <customButtonIcon button="button_b_SNES">./_inc/images/help-button-east.svg</customButtonIcon>
-         <customButtonIcon button="button_b_switch">./_inc/images/help-button-south.svg</customButtonIcon>
-         <!-- South Button -->
-         <customButtonIcon button="button_a_XBOX">./_inc/images/help-button-south.svg</customButtonIcon>
-         <customButtonIcon button="button_a_PS">./_inc/images/help-button-south.svg</customButtonIcon>
-         <customButtonIcon button="button_a_SNES">./_inc/images/help-button-south.svg</customButtonIcon>
-         <customButtonIcon button="button_a_switch">./_inc/images/help-button-east.svg</customButtonIcon>
-         <!-- North Button -->
-         <customButtonIcon button="button_y_XBOX">./_inc/images/help-button-north.svg</customButtonIcon>
-         <customButtonIcon button="button_y_PS">./_inc/images/help-button-north.svg</customButtonIcon>
-         <customButtonIcon button="button_y_SNES">./_inc/images/help-button-north.svg</customButtonIcon>
-         <customButtonIcon button="button_y_switch">./_inc/images/help-button-west.svg</customButtonIcon>
-         <!-- West Button -->
-         <customButtonIcon button="button_x_XBOX">./_inc/images/help-button-west.svg</customButtonIcon>
-         <customButtonIcon button="button_x_PS">./_inc/images/help-button-west.svg</customButtonIcon>
-         <customButtonIcon button="button_x_SNES">./_inc/images/help-button-west.svg</customButtonIcon>
-         <customButtonIcon button="button_x_switch">./_inc/images/help-button-north.svg</customButtonIcon>
-         <!-- Left Stick Click -->
-         <customButtonIcon button="thumbstick_click">./_inc/images/help-left-stick-click.svg</customButtonIcon>
       </helpsystem>
-      <image name="helpBackground">
+      <image name="help-background">
          <origin>0 1</origin>
          <pos>0 1</pos>
          <path>${spacerImage}</path>
@@ -91,6 +124,11 @@ license:          creative commons CC-BY-NC-SA
    ///
    -->
    <view name="system">
+      <systemstatus name="system-status">
+         <color>${systemStatusColor}</color>
+         <backgroundColor>${systemStatusBackgroundColor}</backgroundColor>
+         <backgroundCornerRadius>0.005</backgroundCornerRadius>
+      </systemstatus>
       <carousel name="carousel">
          <pos>1 1</pos>
          <fastScrolling>true</fastScrolling>
@@ -100,7 +138,7 @@ license:          creative commons CC-BY-NC-SA
       </image>
       <image name="stripe">
          <origin>0.5 0</origin>
-         <path>./_inc/images/stripe.png</path>
+         <path>./_inc/images/stripe.svg</path>
          <zIndex>1</zIndex>
       </image>
       <text name="system-name">
@@ -121,6 +159,18 @@ license:          creative commons CC-BY-NC-SA
          <brightness>${systemArtworkBrigtness}</brightness>
          <zIndex>3</zIndex>
       </image>
+      <helpsystem name="
+         help-system-view-left,
+         help-system-view-right
+         ">
+         <scope>view</scope>
+      </helpsystem>
+      <helpsystem name="
+         help-gamelist-view-left,
+         help-gamelist-view-right
+         ">
+         <scope>none</scope>
+      </helpsystem>
    </view>
 
    <!--
@@ -138,11 +188,9 @@ license:          creative commons CC-BY-NC-SA
       <text name="system-name">
          <text>${systemName}</text>
       </text>
-      <gamelistinfo name="system-count">
-         <origin>1 0.5</origin>
-         <fontPath>${fontBold}</fontPath>
-         <color>${gamelistCountColor}</color>
-      </gamelistinfo>
+      <systemstatus name="system-status">
+         <color>${gamelistStatusColor}</color>
+      </systemstatus>
       <image name="top-border,bottom-border">
          <origin>0.5 0</origin>
          <path>${spacerImage}</path>
@@ -153,6 +201,18 @@ license:          creative commons CC-BY-NC-SA
       <image name="bottom-border">
          <stationary>betweenViews</stationary>
       </image>
+      <helpsystem name="
+         help-system-view-left,
+         help-system-view-right
+         ">
+         <scope>none</scope>
+      </helpsystem>
+      <helpsystem name="
+         help-gamelist-view-left,
+         help-gamelist-view-right
+         ">
+         <scope>view</scope>
+      </helpsystem>
    </view>
 
    <!--
@@ -161,18 +221,20 @@ license:          creative commons CC-BY-NC-SA
    ///
    -->
    <variant name="
-      gamelist-basic
-      gamelist-metadata-off-boxart,
-      gamelist-metadata-off-miximage,
-      gamelist-metadata-off-screenshot,
-      gamelist-metadata-off-titlescreen,
-      gamelist-metadata-off-physicalmedia
+      gamelist-list-cover,
+      gamelist-list-screenshot,
+      gamelist-list-screenshot-marquee,
+      gamelist-list-titlescreen,
+      gamelist-list-physicalmedia,
+      gamelist-list-miximage,
+      gamelist-list
       ">
       <view name="gamelist">
          <textlist name="game-list">
             <origin>0 0</origin>
-            <fontPath>${fontBold}</fontPath>
-            <selectorColor>${gamelistSelectorColor}</selectorColor>
+            <fontPath>${fontRegular}</fontPath>
+            <selectorColor>00000000</selectorColor>
+            <selectedBackgroundColor>${gamelistSelectorColor}</selectedBackgroundColor>
             <primaryColor>${gamelistPrimaryColor}</primaryColor>
             <secondaryColor>${gamelistSecondaryColor}</secondaryColor>
             <selectedColor>${gamelistSelectedColor}</selectedColor>
@@ -181,17 +243,18 @@ license:          creative commons CC-BY-NC-SA
       </view>
    </variant>
    <variant name="
-      gamelist-metadata-off-boxart,
-      gamelist-metadata-off-miximage,
-      gamelist-metadata-off-screenshot,
-      gamelist-metadata-off-titlescreen,
-      gamelist-metadata-off-physicalmedia
+      gamelist-list-cover,
+      gamelist-list-screenshot,
+      gamelist-list-screenshot-marquee,
+      gamelist-list-titlescreen,
+      gamelist-list-physicalmedia,
+      gamelist-list-miximage
       ">
       <view name="gamelist">
          <video name="game-art">
             <origin>0.5 0.5</origin>
-            <imageCornerRadius>0.02</imageCornerRadius>
-            <videoCornerRadius>0.02</videoCornerRadius>
+            <imageCornerRadius>0.005</imageCornerRadius>
+            <videoCornerRadius>0.005</videoCornerRadius>
             <pillarboxes>false</pillarboxes>
             <delay>3</delay>
             <iterationCount>1</iterationCount>
@@ -199,38 +262,47 @@ license:          creative commons CC-BY-NC-SA
          </video>
       </view>
    </variant>
-   <variant name="gamelist-metadata-off-boxart">
+   <variant name="gamelist-list-cover">
       <view name="gamelist">
          <video name="game-art">
-            <imageType>cover,screenshot</imageType>
+            <imageType>cover</imageType>
          </video>
       </view>
    </variant>
-   <variant name="gamelist-metadata-off-miximage">
-      <view name="gamelist">
-         <video name="game-art">
-            <imageType>miximage</imageType>
-         </video>
-      </view>
-   </variant>
-   <variant name="gamelist-metadata-off-screenshot">
+   <variant name="gamelist-list-screenshot,gamelist-list-screenshot-marquee">
       <view name="gamelist">
          <video name="game-art">
             <imageType>screenshot</imageType>
          </video>
       </view>
    </variant>
-   <variant name="gamelist-metadata-off-titlescreen">
+   <variant name="gamelist-list-screenshot-marquee">
+      <view name="gamelist">
+         <image name="game-marquee">
+            <origin>0.5 0.5</origin>
+            <imageType>marquee</imageType>
+            <zIndex>100</zIndex>
+         </image>
+      </view>
+   </variant>
+   <variant name="gamelist-list-titlescreen">
       <view name="gamelist">
          <video name="game-art">
             <imageType>titlescreen</imageType>
          </video>
       </view>
    </variant>
-   <variant name="gamelist-metadata-off-physicalmedia">
+   <variant name="gamelist-list-physicalmedia">
       <view name="gamelist">
          <video name="game-art">
             <imageType>physicalmedia</imageType>
+         </video>
+      </view>
+   </variant>
+   <variant name="gamelist-list-miximage">
+      <view name="gamelist">
+         <video name="game-art">
+            <imageType>miximage</imageType>
          </video>
       </view>
    </variant>
@@ -240,7 +312,7 @@ license:          creative commons CC-BY-NC-SA
    Gamelist View - Carousel Variants
    ///
    -->
-   <variant name="gamelist-carousel">
+   <variant name="gamelist-carousel-cover">
       <include>./_inc/systems/coversize/${systemCoverSize}.xml</include>
       <view name="gamelist">
          <carousel name="game-carousel">
